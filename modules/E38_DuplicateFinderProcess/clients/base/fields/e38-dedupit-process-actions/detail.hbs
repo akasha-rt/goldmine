@@ -1,0 +1,22 @@
+{{#if detail_view}}
+
+    <div class="ellipsis_inline" data-placement="bottom">
+
+        {{#each action_buttons}}
+
+            <button id="{{this.id}}" type="button" class="{{this.classes}}"
+                {{#if this.disabled}} disabled {{/if}}>
+                {{str this.label 'E38_DuplicateFinderProcess'}}
+            </button>
+
+        {{/each}}
+
+        {{#if buttons_retrieving}}
+            <div class="loading">
+                <i class="l1">.</i><i class="l2">.</i><i class="l3">.</i>
+            </div>
+        {{/if}}
+
+    </div>
+
+{{/if}}

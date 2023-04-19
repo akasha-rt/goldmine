@@ -1,0 +1,25 @@
+{{#if loading}}
+
+    <div class='loading'>
+        <i class="l1">.</i><i class="l2">.</i><i class="l3">.</i>
+    </div>
+
+{{else}}
+
+    {{#if error}}
+
+        <span>{{message}}</span>
+
+    {{else}}
+
+        <div class="progress progress-info progress-striped active" data-holder="scan-progress"
+             rel="tooltip" data-original-title="{{progress}}%">
+            <div class="bar" style="width: {{progress}}%"></div>
+        </div>
+
+    {{/if}}
+
+{{/if}}
+
+
+

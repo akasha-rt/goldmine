@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  'Cold Call' => 'Hideghívás',
+  'Existing Customer' => 'Meglévő kliens',
+  'Self Generated' => 'Önállóan létrehozott',
+  'Employee' => 'Munkavállaló',
+  'Partner' => 'Partner',
+  'Public Relations' => 'PR',
+  'Direct Mail' => 'Közvetlen email',
+  'Conference' => 'Konferencia',
+  'Trade Show' => 'Kiállítás',
+  'Web Site' => 'Weboldal',
+  'Word of mouth' => 'Szóbeszéd',
+  'Email' => 'E-mail:',
+  'Campaign' => 'Kampány',
+  'Other' => 'Egyéb',
+  'Lit_Request' => 'Literature Request',
+  'OpenHouse' => 'Open House',
+  'Magazine' => 'Magazine',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'GlobalSpec' => 'GlobalSpec',
+  '' => '',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

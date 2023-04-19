@@ -1,0 +1,53 @@
+<div class="row-fluid">
+    <div class="main-pane span12">
+        <div class="headerpane">
+            <h1>
+
+                <span class="record-cell" data-type="{{this.type}}" data-name="{{this.name}}">
+                    <span class="table-cell-wrapper">
+                        <span class="index eclipse inline" data-fieldname="{{this.name}}">
+                            <div class="ellipsis_inline">{{str 'LBL_EMERGED_DUPLICATE_TITLE'
+                                                               'E38_MergedDuplicates'}}</div>
+                        </span>
+                    </span>
+                </span>
+
+                <div class="btn-toolbar pull-right">
+
+                    <!--render buttons-->
+                    {{#each buttons}}
+                        <span class="detail">
+                            <a type="{{this.type}}" track="click:{{this.action}}" name="{{this.name}}"
+                               class="{{this.css_class}}">
+                                {{str this.label 'E38_DuplicateFinderProcess'}}
+                            </a>
+                        </span>
+                    {{/each}}
+                </div>
+            </h1>
+        </div>
+
+        <div class="container-fluid">
+
+            {{#each duplicate_bean_data}}
+
+                <div class="row-fluid">
+
+                    <div class="span2">
+
+                        <strong>{{this.label}}</strong>:
+
+                    </div>
+
+                    <div class="span3">
+
+                        {{this.value}}
+                    </div>
+
+                </div>
+
+            {{/each}}
+
+        </div>
+    </div>
+</div>

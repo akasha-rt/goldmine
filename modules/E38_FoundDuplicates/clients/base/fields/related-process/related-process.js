@@ -1,0 +1,4 @@
+({relate_href:'',relate_value:'',loading:true,extendsFrom:'RelateField',initialize:function(options){this._super('initialize',[options]);options.context.on('38elements:duplicate-check-beans-retrieved',function(){$.each(this.context.get('collection').models,function(index,found_duplicates_bean){if(found_duplicates_bean.get('id')!=this.model.get('id')){return;}
+if(found_duplicates_bean.get('ignore_pair')){$(this.el).closest('tr').find('a[track=\'click:rowactions\']').remove();}
+var duplicate_check_bean=found_duplicates_bean.get('duplicate_check_bean');this.relate_href='#E38_DuplicateFinderProcess/'+
+duplicate_check_bean.get('duplicate_finder_process').id;this.relate_value=duplicate_check_bean.get('duplicate_finder_process').name;this.loading=false;this.render();return false;}.bind(this));},this);},});

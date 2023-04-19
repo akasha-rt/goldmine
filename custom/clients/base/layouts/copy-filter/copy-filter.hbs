@@ -1,0 +1,206 @@
+<div class="row-fluid">
+    <div class="main-pane span8">
+        <div class="headerpane">
+            <h1>
+                <span class="record-cell" style="width:250px; font-size: 20px;">
+                    <div>{{str 'LBL_COPY_FILTER'}}</div>
+                </span>
+                <div class="btn-toolbar pull-right">
+                    <span sfuuid="247" class="create" tabindex="-1">
+                        <a href="javascript:void(0);" class="btn btn-invisible btn-link" role="button" tabindex="0"
+                            name="cancel_button" track="click:cancel_button">{{str 'LBL_HEADERPANE_BUTTON_CANCEL'}}</a>
+                    </span>
+                    <span sfuuid="249" class="create" tabindex="-1">
+                        <a href="javascript:void(0);" class="rowaction btn btn-primary" role="button" tabindex="0"
+                            name='ok_button' track="click:save_button">{{str 'LBL_HEADERPANE_BUTTON_SAVE'}}</a>
+                    </span>
+                </div>
+            </h1>
+        </div>
+        <div class="record">
+            <div class="row-fluid panel_body">
+                <div class="span6 record-cell edit" data-type="textarea" data-name="title" rel="">
+                    <div class="record-label">
+                        {{str 'LBL_DESTINATION_USERS'}}
+                    </div>
+
+                    <span class="normal index" data-fieldname="title" data-index="">
+                        <span sfuuid="257" class="edit">
+                            <select class='users_select' style='width:100%' multiple='multiple'
+                                placeholder='Select users'></select>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="span6 record-cell edit" data-type="bool" data-name="do_not_call" rel="">
+                    <div class="record-label">
+                        {{str 'LBL_DESTINATION_TEAMS'}}
+                    </div>
+
+                    <span class="normal index" data-fieldname="do_not_call" data-index="">
+                        <span sfuuid="258" class="edit">
+                            <select class='teams_select' style='width:100%' multiple='multiple'
+                                placeholder='Select teams'></select>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="record">
+            <div class="row-fluid panel_body">
+                <div class="span6 record-cell edit" data-type="textarea" data-name="title" rel="">
+                    <div class="record-label">
+                        {{str 'LBL_DESTINATION_ROLES'}}
+                    </div>
+
+                    <span class="normal index" data-fieldname="title" data-index="">
+                        <span sfuuid="257" class="edit">
+                            <select class='roles_select' style='width:100%' multiple='multiple'
+                                placeholder='Select roles'></select>
+                        </span>
+                    </span>
+                </div>
+
+                <div class="span6 record-cell edit"> </div>
+            </div>
+        </div>
+        <div class="record">
+            <div class="row-fluid panel_body">
+                <div class="span6 record-cell edit" data-type="appendTextName" data-name="title" rel="">
+                    <div class="record-label">
+                        {{str 'LBL_APPEND_TEXT'}}
+                    </div>
+                    <span class="normal index" data-fieldname="title" data-index="">
+                        <span sfuuid="257" class="edit">
+                            <label>
+                                <input type="checkbox" id="182" name="appendCheckbox" aria-label="Boolean">
+                            </label>
+                        </span>
+                    </span>
+                    <span class="edit" data-name="appendTextName">
+                        <span class="edit">
+                            <input type="text" name="appendTextName" class="appendTextName" value="" maxlength="255"
+                                class="input-large" aria-label="appendTextName">
+                        </span>
+                    </span>
+                </div>
+                <div class="span6 record-cell edit" data-type="bool" data-name="do_not_call" rel="">
+                    <div class="record-label">
+                        {{str 'LBL_PREPEND_TEXT'}}
+                    </div>
+                    <span class="normal index" data-fieldname="do_not_call" data-index="">
+                        <span sfuuid="258" class="edit">
+                            <label>
+                                <input type="checkbox" name="prependCheckbox" aria-label="Boolean">
+                            </label>
+                        </span>
+                    </span>
+                    <span class="edit" data-name="prependTextName">
+                        <span class="edit">
+                            <input type="text" name="prependTextName" class="prependTextName" maxlength="255" value=""
+                                class="inherit-width" aria-label="appendTextName">
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-component="sidebar" class="side sidebar-content span4">
+        <div
+            style="background-color:#F3F3F3; height: 51px;border-width: 1px; border-bottom-style: solid; border-bottom-color: gainsboro; border-left-style: solid; border-left-color: gainsboro;">
+        </div>
+        <div class="record-label" data-name="title"
+            style="height:30px;margin-top: -50px;margin-left: 15px;position: absolute;">
+            <h4> {{str 'LBL_HELP'}}</h4>
+        </div>
+        <div data-type="text" data-name="title"
+            style="background:white;border-style:solid;border-width:1px;border-color:gainsboro; margin-top:15px; margin-left:15px; margin-right:15px;">
+            <span class="normal index" data-fieldname="title" data-index="">
+                <span sfuuid="39" class="edit" id="headerContainer" style="margin-top:-15px;">
+                    <div class="headerpane"
+                        style="width: 100.1%; position: static;min-height: 60px;border-style: solid;border-width: 1px;border-color: gainsboro;">
+                        <div style="display:inline-flex;">
+                            <h4 style="padding-left:10px; margin-right:10px;"><i class="fa fa-info-circle"></i></h4>
+                            <h4>{{str 'LBL_COPY_FILTER_TIPS'}}s</h4>
+                        </div>
+                    </div>
+                </span>
+                <div sfuuid="39" class="edit" id="recordContainer" style="margin-top: 20px;min-height: 80px;">
+                    <h1 id="previewFieldLabel" style="margin-left: 16px; font-weight: bold;"></h1>
+                    <div class="btn-list" id="buttonsPreviewContainer" style="margin-right: 10px;">
+                        <h1 style="margin-left: 2%;"><b>{{str 'LBL_ELEMMENTS'}}</b></h1>
+                        <table class="table table-bordered table-striped">
+                            <thead>
+                                <tr>
+                                    <th>{{str 'LBL_ELEMMENT'}}</th>
+                                    <th>{{str 'LBL_DESCRIPTION'}}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <p>{{str 'LBL_DESTINATION_USERS'}}</p>
+                                        <div style="display:inline-flex">
+                                            <input type="text" placeholder="vagrant admin" disabled=""
+                                                style="width: 150px;margin-right: 10px;">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{str 'LBL_DESTINATION_USERS_FILTER_TIPS'}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>{{str 'LBL_DESTINATION_TEAMS'}}</p>
+                                        <div style="display:inline-flex">
+                                            <input type="text" placeholder="East West" disabled=""
+                                                style="width: 150px;margin-right: 10px;">
+                                        </div>
+                                    </td>
+                                    <td>
+                                        {{str 'LBL_DESTINATION_TEAMS_FILTER_TIPS'}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>{{str 'LBL_DESTINATION_ROLES'}}</p>
+                                        <div style="display:inline-flex">
+                                            <input type="text" placeholder="East Sales" disabled=""
+                                                style="width: 150px;margin-right: 10px;">
+                                        </div>
+                                    </td>
+                                    <td> {{str 'LBL_DESTINATION_ROLES_FILTER_TIPS'}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>{{str 'LBL_APPEND_TEXT'}}</p>
+                                        <input type="checkbox" id="182" name="appendCheckbox" aria-label="Boolean"
+                                            disabled checked>
+                                        <input type="text" placeholder="Test" disabled=""
+                                            style="width: 130px;margin-right: 10px;">
+
+                                    </td>
+                                    <td>
+                                        {{str 'LBL_APPEND_TEXT_TIPS'}}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p>{{str 'LBL_PREPEND_TEXT'}}</p>
+                                        <input type="checkbox" id="182" name="prependCheckbox" aria-label="Boolean"
+                                            disabled checked>
+                                        <input type="text" placeholder="07/06/2019" disabled=""
+                                            style="width: 130px;margin-right: 10px;">
+                                    </td>
+                                    <td> {{str 'LBL_PREPEND_TEXT_TIPS'}}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,34 @@
+<?php
+// created: 2020-10-28 18:25:00
+$viewdefs['ProductTemplates']['base']['filter']['default'] = array (
+  'default_filter' => 'all_records',
+  'fields' => 
+  array (
+    'name' => 
+    array (
+    ),
+    'mft_part_num' => 
+    array (
+    ),
+    'vendor_part_num' => 
+    array (
+    ),
+    'type_name' => 
+    array (
+    ),
+    'date_available' => 
+    array (
+    ),
+    'support_term' => 
+    array (
+    ),
+    'tag' => 
+    array (
+    ),
+    '$favorite' => 
+    array (
+      'predefined_filter' => true,
+      'vname' => 'LBL_FAVORITES_FILTER',
+    ),
+  ),
+);

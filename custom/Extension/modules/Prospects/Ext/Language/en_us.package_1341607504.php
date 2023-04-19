@@ -1,0 +1,30 @@
+<?php
+
+$mod_strings['LABEL_SERVICES_C'] = 'Services';
+$mod_strings['LABEL_RAW_MATERIAL_C'] = 'Raw Material';
+$mod_strings['LABEL_M1_OIL_C'] = 'M1 Oil';
+$mod_strings['LABEL_MATERIAL_TESTING_C'] = 'Material Testing';
+$mod_strings['LABEL_OPTICAL_SYSTEMS_C'] = 'Optical Systems';
+$mod_strings['LABEL_WELDING_CENTER_C'] = 'Welding Center';
+$mod_strings['LABEL_PMT_C'] = 'Precision Measuring Tools (Group)';
+$mod_strings['LABEL_GRANITE_C'] = 'Granite (Group)';
+$mod_strings['LABEL_VISION_SYSTEMS_C'] = 'Vision Systems';
+$mod_strings['LABEL_SPECIAL_GAGE_C'] = 'Special Gage';
+$mod_strings['LABEL_GAGE_BLOCKS_C'] = 'Gage Blocks';
+$mod_strings['LABEL_SAWS_C'] = 'Saws (Group)';
+$mod_strings['LABEL_TESTING_EQUIPMENT_C'] = 'Testing Equipment (Group)';
+$mod_strings['LABEL_LASER_MEASUREMENT_C'] = 'Laser Measurement';
+$mod_strings['LABEL_PTA_AND_HAND_SAW_BLADES_C'] = 'PTA and Hand Saw Blades';
+$mod_strings['LABEL_FLAT_STOCK_C'] = 'Flat Stock';
+$mod_strings['LABEL_DRILL_ROD_C'] = 'Drill Rod';
+$mod_strings['LABEL_HAND_HELD_FORCE_GAGES_C'] = 'Hand Held Force Gages';
+$mod_strings['LABEL_PGS_C'] = 'Precision Ground Stock (Group)';
+$mod_strings['LABEL_BAND_SAWS_C'] = 'Band Saws';
+$mod_strings['LABEL_HAND_TOOLS_C'] = 'Hand Tools';
+$mod_strings['LABEL_SURFACE_PLATES_C'] = 'Surface Plates';
+$mod_strings['LABEL_METROLOGY_EQUIPMENT_C'] = 'Metrology Equipment (Group)';
+$mod_strings['LABEL_BAND_SAW_MACHINES_C'] = 'Band Saw Machines';
+$mod_strings['LABEL_PHT_C'] = 'Precision Hand Tools';
+$mod_strings['LABEL_JST_C'] = 'Jobsite and Shop Tools (Group)';
+$mod_strings['LABEL_FORCE_MEASUREMENT_C'] = 'Force Measurement';
+$mod_strings['LABEL_CUSTOM_GRANITE_SOLUTIONS_C'] = 'Custom Granite Solutions';

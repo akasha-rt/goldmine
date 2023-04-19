@@ -1,0 +1,28 @@
+<div class="ellipsis_inline" data-placement="bottom" data-container="body">
+
+    {{#if loading}}
+
+        <div class="loading">
+            <i class="l1">.</i><i class="l2">.</i><i class="l3">.</i>
+        </div>
+
+    {{else}}
+
+        <span class="e38-center" style="display: inline-block !important;">
+            <a href="{{relate_href}}" target="_blank">{{relate_value}}</a>
+        </span>
+
+        {{#if relate_href}}
+
+            <button class="btn pull-right e38-preview-duplicate" type="button" data-placement="bottom"
+                    data-original-title="{{str 'LBL_PREVIEW' 'E38_FoundDuplicates'}}" rel="tooltip">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+            </button>
+
+        {{/if}}
+
+    {{/if}}
+
+</div>
+
+

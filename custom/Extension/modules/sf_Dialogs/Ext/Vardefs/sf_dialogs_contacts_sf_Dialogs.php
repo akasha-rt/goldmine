@@ -1,0 +1,29 @@
+<?php
+ // created: 2022-06-11 03:10:58
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts']['name'] = 'sf_dialogs_contacts';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts']['type'] = 'link';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts']['relationship'] = 'sf_dialogs_contacts';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts']['source'] = 'non-db';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts']['vname'] = 'LBL_SF_DIALOGS_CONTACTS_FROM_CONTACTS_TITLE';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts']['id_name'] = 'sf_dialogs_contactscontacts_ida';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['name'] = 'sf_dialogs_contacts_name';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['type'] = 'relate';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['source'] = 'non-db';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['vname'] = 'LBL_SF_DIALOGS_CONTACTS_FROM_CONTACTS_TITLE';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['save'] = true;
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['id_name'] = 'sf_dialogs_contactscontacts_ida';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['link'] = 'sf_dialogs_contacts';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['table'] = 'contacts';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['module'] = 'Contacts';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['rname'] = 'name';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['db_concat_fields'][0] = 'first_name';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contacts_name']['db_concat_fields'][1] = 'last_name';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contactscontacts_ida']['name'] = 'sf_dialogs_contactscontacts_ida';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contactscontacts_ida']['type'] = 'id';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contactscontacts_ida']['relationship'] = 'sf_dialogs_contacts';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contactscontacts_ida']['source'] = 'non-db';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contactscontacts_ida']['reportable'] = false;
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contactscontacts_ida']['side'] = 'right';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contactscontacts_ida']['vname'] = 'LBL_SF_DIALOGS_CONTACTS_FROM_SF_DIALOGS_TITLE';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contactscontacts_ida']['link'] = 'sf_dialogs_contacts';
+$dictionary['sf_Dialogs']['fields']['sf_dialogs_contactscontacts_ida']['rname'] = 'id';

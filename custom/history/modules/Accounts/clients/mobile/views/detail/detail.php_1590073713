@@ -1,0 +1,73 @@
+<?php
+// created: 2020-02-03 08:58:59
+$viewdefs['Accounts']['mobile']['view']['detail'] = array (
+  'templateMeta' => 
+  array (
+    'maxColumns' => '1',
+    'widths' => 
+    array (
+      0 => 
+      array (
+        'label' => '10',
+        'field' => '30',
+      ),
+    ),
+    'useTabs' => false,
+    'tabDefs' => 
+    array (
+      'LBL_PANEL_DEFAULT' => 
+      array (
+        'newTab' => false,
+        'panelDefault' => 'expanded',
+      ),
+    ),
+  ),
+  'panels' => 
+  array (
+    0 => 
+    array (
+      'label' => 'LBL_PANEL_DEFAULT',
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'name' => 'name',
+          'displayParams' => 
+          array (
+            'required' => true,
+            'wireless_edit_only' => true,
+          ),
+        ),
+        1 => 
+        array (
+          'name' => 'account_type',
+          'comment' => 'The Company is of this type',
+          'label' => 'LBL_TYPE',
+        ),
+        2 => 'phone_office',
+        3 => 
+        array (
+          'name' => 'website',
+          'displayParams' => 
+          array (
+            'type' => 'link',
+          ),
+        ),
+        4 => 'billing_address_street',
+        5 => 'billing_address_city',
+        6 => 'billing_address_state',
+        7 => 'billing_address_postalcode',
+        8 => 'billing_address_country',
+        9 => 'shipping_address_street',
+        10 => 'shipping_address_city',
+        11 => 'shipping_address_state',
+        12 => 'shipping_address_postalcode',
+        13 => 'shipping_address_country',
+        14 => 'assigned_user_name',
+        15 => 'team_name',
+        16 => 'email',
+        17 => 'tag',
+      ),
+    ),
+  ),
+);

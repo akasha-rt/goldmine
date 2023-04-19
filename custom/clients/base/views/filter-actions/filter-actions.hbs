@@ -1,0 +1,147 @@
+{{!--
+/*
+ * Your installation or use of this SugarCRM file is subject to the applicable
+ * terms available at
+ * http://support.sugarcrm.com/06_Customer_Center/10_Master_Subscription_Agreements/.
+ * If you do not agree to all of the applicable terms or do not have the
+ * authority to bind the entity as an authorized representative, then do not
+ * install or use this SugarCRM file.
+ *
+ * Copyright (C) SugarCRM Inc. All rights reserved.
+ */
+--}}
+<script>
+    Handlebars.registerHelper('is78', function (options) {
+        if (App.metadata.getServerInfo().version.slice(0, 3) >= '7.8') {
+            return options.fn(this);
+        } else {
+            return options.inverse(this);
+        }
+    });
+
+    Handlebars.registerHelper('is710', function (options) {
+        if (App.metadata.getServerInfo().version.slice(0, 4) >= '7.10') {
+            return options.fn(this);
+        } else {
+            return options.inverse(this);
+        }
+    });
+</script>
+
+{{#is710}}
+    <div class="row-fluid">
+        <div class="controls span6">
+            <input type="text" class="inherit-width" aria-label="{{str 'LBL_FILTER_NEW_NAME' 'Filters'}}"
+                placeholder="{{str 'LBL_FILTER_NEW_NAME' 'Filters'}}…">
+        </div>
+        {{#if showActions}}
+            <div class="span6">
+                <div class="pull-right">
+                    <button type="button" class="btn btn-link btn-invisible" data-action="filter-reset"
+                        track="click:filter-reset">{{str "LBL_RESET"}}</button>
+                    <button type="button" class="btn btn-link btn-invisible" data-action="filter-close"
+                        track="click:filter-close">{{str "LBL_CANCEL_BUTTON_LABEL"}}</button>
+                    <button type="button" class="btn btn-link btn-invisible hide" data-action="filter-delete"
+                        track="click:filter-delete">{{str "LBL_DELETE"}}</button>
+                    <span class="actions btn-group detail">
+                        <button type="button" class="btn btn-primary disabled" data-action="filter-save"
+                            track="click:filter-save">{{str "LBL_SAVE_BUTTON_LABEL"}}</button>
+
+                        <a style="min-width:0px; width:12px; height:18px" track="click:actiondropdown"
+                            class="btn dropdown-toggle btn-primary disabled" data-toggle="dropdown"
+                            href="javascript:void(0);" data-placement="bottom" rel="tooltip" title=""
+                            data-original-title="Actions">
+                            <span class="fa fa-caret-down"></span>
+                        </a>
+                        <ul data-menu="dropdown" class="dropdown-menu" role="menu">
+                            <li>
+                                <span class="detail">
+                                    <a class="copy_filter" track="click:copy_filter">{{str 'LBL_COPY_FILTER'}}</a>
+                                </span>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        {{/if}}
+    </div>
+    {{else}}
+        {{#is78}}
+            <div class="row-fluid">
+                <div class="controls span6">
+                    <input type="text" class="inherit-width" aria-label="{{str 'LBL_FILTER_NEW_NAME' 'Filters'}}"
+                        placeholder="{{str 'LBL_FILTER_NEW_NAME' 'Filters'}}…">
+                </div>
+                {{#if showActions}}
+                    <div class="span6">
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-link btn-invisible reset_button"
+                                data-action="filter-reset" track="click:filter-reset">{{str "LBL_RESET"}}</button>
+                            <button type="button" class="btn btn-link btn-invisible filter-close"
+                                data-action="filter-close"
+                                track="click:filter-close">{{str "LBL_CANCEL_BUTTON_LABEL"}}</button>
+                            <button type="button" class="btn btn-link btn-invisible hide delete_button"
+                                data-action="filter-delete" track="click:filter-delete">{{str "LBL_DELETE"}}</button>
+
+                            <span class="actions btn-group detail">
+                                <a data-action="filter-save" class="btn btn-primary disabled save_button"
+                                    track="click:filter-save">{{str "LBL_SAVE_BUTTON_LABEL"}}</a>
+
+                                <a style="min-width:0px; width:12px; height:18px" track="click:actiondropdown"
+                                    class="btn dropdown-toggle btn-primary disabled" data-toggle="dropdown"
+                                    href="javascript:void(0);" data-placement="bottom" rel="tooltip" title=""
+                                    data-original-title="Actions">
+                                    <span class="icon-caret-down"></span>
+                                </a>
+                                <ul data-menu="dropdown" class="dropdown-menu" role="menu">
+                                    <li>
+                                        <span class="detail">
+                                            <a class="copy_filter"
+                                                track="click:copy_filter">{{str 'LBL_COPY_FILTER'}}</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                    </div>
+                {{/if}}
+            </div>
+            {{else}}
+                <div class="row-fluid">
+                    <div class="controls span6">
+                        <input type="text" class="inherit-width" aria-label="{{str 'LBL_FILTER_NEW_NAME' 'Filters'}}"
+                            placeholder="{{str 'LBL_FILTER_NEW_NAME' 'Filters'}}…">
+                    </div>
+                    {{#if showActions}}
+                        <div class="span6"></div>
+                        <div class="pull-right">
+                            <button type="button" class="btn btn-link btn-invisible" data-action="filter-reset"
+                                track="click:filter-reset">{{str "LBL_RESET"}}</button>
+                            <button type="button" class="btn btn-link btn-invisible" data-action="filter-close"
+                                track="click:filter-close">{{str "LBL_CANCEL_BUTTON_LABEL"}}</button>
+                            <button type="button" class="btn btn-link btn-invisible hide" data-action="filter-delete"
+                                track="click:filter-delete">{{str "LBL_DELETE"}}</button>
+                            <span class="actions btn-group detail">
+                                <button type="button" class="btn btn-primary disabled" data-action="filter-save"
+                                    track="click:filter-save">{{str "LBL_SAVE_BUTTON_LABEL"}}</button>
+                                <a style="min-width:0px; width:12px; height:18px" track="click:actiondropdown"
+                                    class="btn dropdown-toggle btn-primary" data-toggle="dropdown"
+                                    href="javascript:void(0);" data-placement="bottom" rel="tooltip" title=""
+                                    role="button" tabindex="0" aria-haspopup="true" aria-expanded="false"
+                                    aria-label="Actions" data-original-title="Actions"><span
+                                        class="fa fa-caret-down"></span></a>
+                                <ul data-menu="dropdown" class="dropdown-menu" role="menu">
+                                    <li>
+                                        <span class="detail">
+                                            <a class="copy_filter" track="click:copy_filter">{{str 'LBL_COPY_FILTER'}}
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </span>
+                        </div>
+                </div>
+                {{/if}}
+                </div>
+        {{/is78}}
+{{/is710}}

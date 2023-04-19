@@ -1,0 +1,1 @@
+({loading:true,module_label:null,initialize:function(options){this._super('initialize',[options]);options.context.on('38elements:duplicate-check-beans-retrieved',function(){var module_name=this.model.get('duplicate_check_bean').get('for_module');this.module_label=app.lang.getModuleName(module_name,{plural:true});this.loading=false;this.render();},this);},});

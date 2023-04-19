@@ -1,0 +1,160 @@
+<style>
+    .e38-dedupit-record-dashlet {
+        min-height: 100px;
+    }
+
+    .e38-dedupit-record-dashlet .btn {
+        margin-left: 1px !important;
+    }
+
+    .e38-fit-width {
+        white-space: nowrap !important;
+        width: 1% !important;
+        min-width: 1% !important;
+        max-width: 100% !important;
+    }
+
+</style>
+
+
+{{#if loading}}
+
+    <div class="row-fluid" style="text-align: center; margin-top: 45px;">
+        <div class="span12">
+            <div class="loading">
+                <i class="l1">.</i><i class="l2">.</i><i class="l3">.</i>
+            </div>
+        </div>
+    </div>
+
+{{else}}
+
+    {{#if error_message}}
+
+        <div class="row-fluid" style="text-align: center; margin-top: 45px;">
+            <div class="span12">
+                {{error_message}}
+            </div>
+        </div>
+
+    {{else}}
+
+        {{#if found_duplicates}}
+
+            <table class="table table-striped dataTable">
+                <thead>
+                <tr>
+
+                    <th>
+                        <span>{{str 'LBL_DUPLICATE_NAME' 'E38_FoundDuplicates'}}</span>
+                    </th>
+
+                    <th style="min-width: 1%">
+                        <span>{{str 'LBL_DATE_DETECTED' 'E38_FoundDuplicates'}}</span>
+                    </th>
+
+                    <th>
+                        <span>{{str 'LBL_PROCESS_NAME' 'E38_FoundDuplicates'}}</span>
+                    </th>
+
+                    <th style="min-width: 1%">
+                        <span> </span>
+                    </th>
+
+                </tr>
+                </thead>
+                <tbody>
+
+                {{#each found_duplicates}}
+
+                    <tr class="single">
+
+                        <td {{#if this.ignore_pair}} style="background: lightgrey" {{/if}}>
+                <span class="list">
+                    <div class="ellipsis_inline" data-placement="top" title=""
+                         data-original-title="{{this.duplicate_name}}">
+
+                        <a class="e38-center-duplicate-rel" target="_blank"
+                           style="display: inline-block !important; width: 70%; overflow: hidden;"
+                           href="#{{this.for_module}}/{{this.duplicate_id}}">
+                            {{this.duplicate_name}}
+                        </a>
+
+                        <a href="javascript:void(0);" class="rowaction btn e38-preview-duplicate-rel pull-right"
+                           rel="tooltip"
+                           data-duplicate-id="{{this.duplicate_id}}"
+                           data-original-title="{{str 'LBL_PREVIEW' 'E38_FoundDuplicates'}}">
+                            <i class="fa fa-eye"></i>
+                        </a>
+                    </div>
+                </span>
+                        </td>
+
+
+                        <td class="e38-fit-width" style="{{#if this.ignore_pair}} background: lightgrey;{{/if}}">
+                <span class="list">
+                    <div class="ellipsis_inline">
+                        {{this.date_detected}}
+                    </div>
+                </span>
+                        </td>
+
+                        <td {{#if this.ignore_pair}} style="background: lightgrey" {{/if}}>
+                <span class="list">
+                    <div class="ellipsis_inline" data-original-title="{{this.process_name}}">
+                        <a href="#E38_DuplicateFinderProcess/{{this.process_id}}" target="_blank">
+                            {{this.process_name}}
+                        </a>
+                    </div>
+                </span>
+                        </td>
+
+                        <td class="e38-fit-width" style="{{#if
+                                this.ignore_pair}} background: lightgrey;{{/if}} padding-left: 2px; padding-right: 2px;">
+                            <span class="list">
+
+                                <div class="ellipsis_inline">
+                                    <a href="javascript:void(0);" class="rowaction btn e38-merge-duplicate-rec"
+                                       rel="tooltip"
+                                       data-duplicate-id="{{this.duplicate_id}}"
+                                       data-process-id="{{this.process_id}}"
+                                       data-original-title="{{str 'LBL_MERGE' 'E38_FoundDuplicates'}}">
+                                        <i class="fa fa-compress"></i>
+                                    </a>
+
+                                    {{#unless this.ignore_pair}}
+                                        <a href="javascript:void(0);" class="rowaction btn e38-ignore-duplicate-rec"
+                                           rel="tooltip"
+                                           data-dup-pair-id="{{this.found_duplicates_id}}"
+                                           data-duplicate-id="{{this.duplicate_id}}"
+                                           data-original-title="{{str 'LBL_IGNORE_DUPLICATE' 'E38_FoundDuplicates'}}">
+                                            <i class="fa fa-times"></i>
+                                        </a>
+                                    {{/unless}}
+                                </div>
+                            </span>
+                        </td>
+
+                    </tr>
+
+                {{/each}}
+
+                </tbody>
+
+            </table>
+
+        {{else}}
+
+            <div class="row-fluid" style="text-align: center; margin-top: 45px;">
+                <div class="span12">
+                    <div class="e38-message-warning">
+                        {{str 'LBL_E38_NO_DUPLICATES_FOR_RECORD' 'E38_FoundDuplicates'}}
+                    </div>
+                </div>
+            </div>
+
+        {{/if}}
+
+    {{/if}}
+
+{{/if}}

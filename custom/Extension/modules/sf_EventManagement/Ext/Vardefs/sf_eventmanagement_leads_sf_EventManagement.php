@@ -1,0 +1,29 @@
+<?php
+ // created: 2022-06-11 03:11:02
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads']['name'] = 'sf_eventmanagement_leads';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads']['type'] = 'link';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads']['relationship'] = 'sf_eventmanagement_leads';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads']['source'] = 'non-db';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads']['vname'] = 'LBL_SF_EVENTMANAGEMENT_LEADS_FROM_LEADS_TITLE';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads']['id_name'] = 'sf_eventmanagement_leadsleads_ida';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['name'] = 'sf_eventmanagement_leads_name';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['type'] = 'relate';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['source'] = 'non-db';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['vname'] = 'LBL_SF_EVENTMANAGEMENT_LEADS_FROM_LEADS_TITLE';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['save'] = true;
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['id_name'] = 'sf_eventmanagement_leadsleads_ida';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['link'] = 'sf_eventmanagement_leads';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['table'] = 'leads';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['module'] = 'Leads';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['rname'] = 'name';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['db_concat_fields'][0] = 'first_name';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leads_name']['db_concat_fields'][1] = 'last_name';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leadsleads_ida']['name'] = 'sf_eventmanagement_leadsleads_ida';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leadsleads_ida']['type'] = 'id';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leadsleads_ida']['relationship'] = 'sf_eventmanagement_leads';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leadsleads_ida']['source'] = 'non-db';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leadsleads_ida']['reportable'] = false;
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leadsleads_ida']['side'] = 'right';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leadsleads_ida']['vname'] = 'LBL_SF_EVENTMANAGEMENT_LEADS_FROM_SF_EVENTMANAGEMENT_TITLE';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leadsleads_ida']['link'] = 'sf_eventmanagement_leads';
+$dictionary['sf_EventManagement']['fields']['sf_eventmanagement_leadsleads_ida']['rname'] = 'id';

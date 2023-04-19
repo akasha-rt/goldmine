@@ -1,0 +1,40 @@
+<?php
+$module_name = 'EAC_MarketingEmail';
+$viewdefs[$module_name] = 
+array (
+  'base' => 
+  array (
+    'view' => 
+    array (
+      'list' => 
+      array (
+        'panels' => 
+        array (
+          0 => 
+          array (
+            'label' => 'LBL_PANEL_DEFAULT',
+            'fields' => 
+            array (
+              0 => 
+              array (
+                'name' => 'groupemail_c',
+                'label' => 'LBL_GROUPEMAIL',
+                'enabled' => true,
+                'readonly' => false,
+                'default' => true,
+              ),
+              1 => 
+              array (
+                'name' => 'email',
+                'label' => 'LBL_EMAIL_ADDRESS',
+                'link' => true,
+                'default' => true,
+                'enabled' => true,
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+);

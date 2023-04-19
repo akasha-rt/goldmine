@@ -1,0 +1,8 @@
+[13-Apr-2023 11:48:42 UTC] PHP Warning:  Undefined array key "db_port" in /usr/local/bin/sugarinfo on line 63
+[13-Apr-2023 11:48:42 UTC] PHP Warning:  Undefined array key "db_port" in /usr/local/bin/sugarinfo on line 143
+[13-Apr-2023 19:11:11 UTC] PHP Warning:  Undefined array key "db_port" in /usr/local/bin/sugarinfo on line 63
+[13-Apr-2023 19:11:11 UTC] PHP Warning:  Undefined array key "db_port" in /usr/local/bin/sugarinfo on line 143
+[13-Apr-2023 19:11:30 UTC] PHP Warning:  Undefined array key "db_port" in /usr/local/bin/sugarinfo on line 63
+[13-Apr-2023 19:11:30 UTC] PHP Warning:  Undefined array key "db_port" in /usr/local/bin/sugarinfo on line 143
+[17-Apr-2023 14:32:29 UTC] PHP Warning:  Undefined array key "db_port" in /usr/local/bin/sugarinfo on line 63
+[17-Apr-2023 14:32:29 UTC] PHP Warning:  Undefined array key "db_port" in /usr/local/bin/sugarinfo on line 143

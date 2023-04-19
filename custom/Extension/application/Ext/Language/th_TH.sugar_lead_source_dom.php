@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  '' => '',
+  'Cold Call' => 'โทรศัพท์เสนอขาย',
+  'Existing Customer' => 'ลูกค้าที่มีอยู่',
+  'Self Generated' => 'สร้างขึ้นด้วยตนเอง',
+  'Employee' => 'พนักงาน',
+  'Lit_Request' => 'Literature Request',
+  'Partner' => 'คู่ค้า',
+  'Public Relations' => 'ประชาสัมพันธ์',
+  'Direct Mail' => 'ไปรษณีย์ขายตรง',
+  'Conference' => 'ประชุม',
+  'OpenHouse' => 'Open House',
+  'Trade Show' => 'งานแสดงสินค้า',
+  'Magazine' => 'Magazine',
+  'Word of mouth' => 'ปากต่อปาก',
+  'Web Site' => 'เว็บไซต์',
+  'Email' => 'อีเมล',
+  'Campaign' => 'แคมเปญ',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'GlobalSpec' => 'GlobalSpec',
+  'Other' => 'อื่นๆ',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

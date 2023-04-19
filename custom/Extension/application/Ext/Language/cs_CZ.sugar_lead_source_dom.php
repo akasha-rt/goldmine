@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  'Cold Call' => 'Volání naslepo',
+  'Existing Customer' => 'Existujíci zákazník',
+  'Self Generated' => 'Automaticky generováno',
+  'Employee' => 'Zaměstnanec',
+  'Partner' => 'Partner',
+  'Public Relations' => 'Verejné vztahy',
+  'Direct Mail' => 'Přimá pošta',
+  'Conference' => 'Konference',
+  'Trade Show' => 'Veletrh',
+  'Web Site' => 'Webová stránka',
+  'Word of mouth' => 'Z doslechu',
+  'Email' => 'E-mail',
+  'Campaign' => 'Kampaň',
+  'Other' => 'Jiné',
+  'Lit_Request' => 'Literature Request',
+  'OpenHouse' => 'Open House',
+  'Magazine' => 'Magazine',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'GlobalSpec' => 'GlobalSpec',
+  '' => '',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

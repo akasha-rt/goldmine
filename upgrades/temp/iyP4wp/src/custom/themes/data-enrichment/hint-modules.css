@@ -1,0 +1,4 @@
+.create-leads-layout [data-name='email'] input,
+.create-contacts-layout [data-name='email'] input {
+    border-color: #0066cc;
+}

@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  'Cold Call' => 'Kald samtale',
+  'Existing Customer' => 'Nåværende kunde',
+  'Self Generated' => 'Egenopprettet',
+  'Employee' => 'Ansatt',
+  'Partner' => 'Partner',
+  'Public Relations' => 'PR',
+  'Direct Mail' => 'DM',
+  'Conference' => 'Konferanse',
+  'Trade Show' => 'Bransjemesse',
+  'Web Site' => 'Nettsted',
+  'Word of mouth' => 'Omtale',
+  'Email' => 'E-postadresse',
+  'Campaign' => 'Kampanje',
+  'Other' => 'Andre',
+  'Lit_Request' => 'Literature Request',
+  'OpenHouse' => 'Open House',
+  'Magazine' => 'Magazine',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'GlobalSpec' => 'GlobalSpec',
+  '' => '',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

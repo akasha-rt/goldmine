@@ -1,0 +1,47 @@
+<?php
+// created: 2020-06-29 15:09:40
+$viewdefs['Accounts']['base']['filter']['default'] = array (
+  'default_filter' => 'all_records',
+  'fields' => 
+  array (
+    'name' => 
+    array (
+    ),
+    'parent_account_c' => 
+    array (
+    ),
+    'parent_name' => 
+    array (
+    ),
+    'account_type' => 
+    array (
+    ),
+    'account_status_c' => 
+    array (
+    ),
+    'billing_address_state' => 
+    array (
+    ),
+    'billing_address_postalcode' => 
+    array (
+    ),
+    'billing_address_country' => 
+    array (
+    ),
+    'industry' => 
+    array (
+    ),
+    'sic_code' => 
+    array (
+    ),
+    'primary_naics_c' => 
+    array (
+    ),
+    'team_name' => 
+    array (
+    ),
+    'assigned_user_name' => 
+    array (
+    ),
+  ),
+);

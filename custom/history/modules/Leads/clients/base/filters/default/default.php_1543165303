@@ -1,0 +1,121 @@
+<?php
+// created: 2018-11-25 17:01:29
+$viewdefs['Leads']['base']['filter']['default'] = array (
+  'default_filter' => 'all_records',
+  'fields' => 
+  array (
+    'first_name' => 
+    array (
+    ),
+    'last_name' => 
+    array (
+    ),
+    'account_name' => 
+    array (
+    ),
+    'primary_address_state' => 
+    array (
+    ),
+    'pmt_c' => 
+    array (
+    ),
+    'special_gage_c' => 
+    array (
+    ),
+    'saws_c' => 
+    array (
+    ),
+    'welding_center_c' => 
+    array (
+    ),
+    'jst_c' => 
+    array (
+    ),
+    'hand_tools_c' => 
+    array (
+    ),
+    'm1_oil_c' => 
+    array (
+    ),
+    'pgs_c' => 
+    array (
+    ),
+    'flat_stock_c' => 
+    array (
+    ),
+    'drill_rod_c' => 
+    array (
+    ),
+    'metrology_equipment_c' => 
+    array (
+    ),
+    'vision_systems_c' => 
+    array (
+    ),
+    'optical_systems_c' => 
+    array (
+    ),
+    'services_c' => 
+    array (
+    ),
+    'laser_measurement_c' => 
+    array (
+    ),
+    'testing_equipment_c' => 
+    array (
+    ),
+    'force_measurement_c' => 
+    array (
+    ),
+    'material_testing_c' => 
+    array (
+    ),
+    'hand_held_force_gages_c' => 
+    array (
+    ),
+    'granite_c' => 
+    array (
+    ),
+    'custom_granite_solutions_c' => 
+    array (
+    ),
+    'surface_plates_c' => 
+    array (
+    ),
+    'team_name' => 
+    array (
+    ),
+    'primary_address_country' => 
+    array (
+    ),
+    'lead_quality_c' => 
+    array (
+      'type' => 'enum',
+      'default' => true,
+      'studio' => 'visible',
+      'width' => '10%',
+      'name' => 'lead_quality_c',
+      'vname' => 'LBL_LEAD_QUALITY',
+    ),
+    'status' => 
+    array (
+    ),
+    'lead_source' => 
+    array (
+    ),
+    'lead_source_description' => 
+    array (
+    ),
+    'date_entered' => 
+    array (
+    ),
+    '$favorite' => 
+    array (
+      'predefined_filter' => true,
+      'vname' => 'LBL_FAVORITES_FILTER',
+    ),
+    'assigned_user_name' => 
+    array (
+    ),
+  ),
+);

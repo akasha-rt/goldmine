@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @author 38 Elements DOO
+ *
+ * 38 Elements DOO ("COMPANY") CONFIDENTIAL
+ *
+ * Copyright (c) 2020 38 Elements DOO, Belgrade, Serbia - All Rights Reserved
+ *
+ * NOTICE:  All information contained herein is, and remains the property
+ * of COMPANY. The intellectual and technical concepts contained herein are
+ * proprietary to COMPANY and may be covered by Serbia and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material is strictly
+ * forbidden unless prior written permission is obtained from COMPANY.
+ * Access to the source code contained herein is hereby forbidden to anyone except
+ * current COMPANY employees, managers or contractors who have executed
+ * Confidentiality and Non-disclosure agreements explicitly covering such access.
+ *
+ * The copyright notice above does not evidence any actual or intended publication
+ * or disclosure  of  this source code, which includes information that is
+ * confidential and/or proprietary, and is a trade secret, of  COMPANY.
+ * ANY REPRODUCTION, MODIFICATION, DISTRIBUTION, PUBLIC  PERFORMANCE,OR PUBLIC
+ * DISPLAY OF OR THROUGH USE  OF THIS  SOURCE CODE  WITHOUT  THE EXPRESS WRITTEN
+ * CONSENT OF COMPANY IS STRICTLY PROHIBITED, AND IN VIOLATION OF APPLICABLE LAWS
+ * AND INTERNATIONAL TREATIES. THE RECEIPT OR POSSESSION OF  THIS SOURCE CODE
+ * AND/OR RELATED INFORMATION DOES NOT CONVEY OR IMPLY ANY RIGHTS TO REPRODUCE,
+ * DISCLOSE OR DISTRIBUTE ITS CONTENTS, OR TO MANUFACTURE, USE, OR SELL ANYTHING
+ * THAT IT  MAY DESCRIBE, IN WHOLE OR IN PART.
+ *
+ * Please contact 38 Elements DOO for further details at office@38elements.com
+ */
+ 
+  class E38_DuplicateCheckAPI extends DuplicateCheckApi { var $excluded_modules = array("\101\143\x74\151\x76\x69\x74\x69\145\163", "\x53\165\142\x73\x63\162\151\x70\164\151\157\156\163", "\105\63\x38\x5f\104\x75\160\154\x69\x63\x61\164\x65\x46\151\x6e\x64\x65\x72\120\162\x6f\143\145\163\163", "\105\x33\70\x5f\104\165\x70\154\151\143\141\x74\145\103\x68\x65\143\x6b", "\105\x33\x38\137\x46\157\165\156\144\x44\165\x70\x6c\151\x63\x61\x74\145\x73", "\105\x33\x38\137\x4d\145\x72\x67\x65\x64\x44\x75\x70\154\x69\143\141\164\145\163", "\x44\x61\x73\150\142\x6f\141\162\144\163", "\x55\163\145\x72\120\x72\x65\x66\145\x72\145\x6e\143\145\x73", "\123\x63\150\x65\x64\x75\154\x65\x72\163\x4a\x6f\142\x73", "\110\157\155\x65", "\103\x61\154\x65\156\x64\141\x72", "\x44\x61\164\x61\x50\x72\x69\x76\x61\x63\171", "\113\x42\x43\x6f\x6e\x74\145\x6e\x74\x73", "\x4f\101\x75\x74\150\124\157\153\x65\156\x73"); function checkForDuplicates($api, $args) { $otb_duplicates = parent::checkForDuplicates($api, $args); if (isset($args["\155\x6f\144\x75\x6c\x65"])) { goto JStmT; } return $otb_duplicates; JStmT: $bean = BeanFactory::newBean($args["\x6d\157\144\165\x6c\x65"]); $args = $this->trimArgs($args); $options = array("\x61\x63\x6c" => "\x72\x65\141\x64", "\x66\x69\x6e\x64\137\x64\165\160\x6c\151\143\x61\164\x65\163" => true); $errors = $this->populateFromApi($api, $bean, $args, $options); if (!($errors !== true)) { goto tdG8i; } return $otb_duplicates; tdG8i: $duplicates = $this->e38checkForDuplicates($bean); $data = array(); if (!$duplicates) { goto I7W8W; } $beans = array(); foreach ($duplicates as $duplicate_id => $found_by_process) { $duplicate_bean = BeanFactory::getBean($args["\155\x6f\144\165\154\145"], $duplicate_id); if (!empty($duplicate_bean->id)) { goto HM5KP; } goto GHsXK; HM5KP: $beans[] = $duplicate_bean; GHsXK: } MqnHy: $options = array("\154\x69\155\151\x74" => -1, "\x6f\x66\x66\163\x65\x74" => 0, "\141\144\144\x5f\x64\x65\154\x65\164\x65\144" => true, "\x6d\157\x64\x75\154\x65" => $args["\155\x6f\x64\165\154\x65"], "\x64\151\163\160\154\x61\x79\x5f\160\x61\162\141\x6d\x73" => null, "\x73\x65\154\145\x63\164" => array(0 => "\x69\144", 1 => "\144\141\164\145\x5f\155\x6f\144\151\x66\x69\145\x64", 2 => "\x61\163\163\x69\x67\x6e\x65\x64\x5f\x75\163\145\162\x5f\x69\144", 3 => "\x63\162\x65\x61\x74\x65\144\x5f\142\171"), "\x61\143\x74\x69\157\156" => "\x6c\151\x73\164"); $data["\156\145\x78\x74\x5f\157\x66\146\163\145\x74"] = -1; $data["\x72\145\143\x6f\162\x64\x73"] = $this->formatBeans($api, $args, $beans, $options); foreach ($data["\162\145\x63\x6f\162\144\163"] as &$duplicate_data) { $duplicate_data["\145\x33\x38\x5f\x66\157\x75\x6e\x64\x5f\142\x79\x5f\x64\145\144\165\x70\151\164"] = true; $process_info = translate("\114\102\114\137\105\x33\70\x5f\104\125\x50\x4c\111\103\101\124\105\137\106\117\x55\x4e\x44\x5f\x42\x59"); $process_info .= count($duplicates[$duplicate_data["\x69\x64"]]["\160\162\157\x63\x65\x73\x73"]) > 1 ? "\x20" . translate("\x4c\x42\114\x5f\x45\63\x38\137\x50\x52\x4f\x43\x45\x53\x53\x5f\x50\114\x55\122\101\x4c") : "\40" . translate("\114\x42\114\137\x45\63\x38\x5f\x50\x52\x4f\x43\x45\123\123\137\x53\111\x4e\x47\x55\114\x41\122"); foreach ($duplicates[$duplicate_data["\151\x64"]]["\x70\162\x6f\x63\145\163\x73"] as $index => $process_name) { $process_info .= "\12\x27{$process_name}\x27"; Z3Ifa: } FTM3G: $duplicate_data["\x65\63\x38\x5f\160\x72\157\x63\x65\163\x73\x5f\x69\156\146\157"] = $process_info; r0Mvd: } HMPfB: I7W8W: if (!($otb_duplicates && $otb_duplicates["\x72\x65\143\157\162\x64\x73"] && $duplicates)) { goto CYdOB; } foreach ($otb_duplicates["\162\145\x63\157\x72\144\x73"] as $otb_duplicate_data) { if (array_key_exists($otb_duplicate_data["\x69\144"], $duplicates)) { goto AxSUL; } $data["\x72\145\143\x6f\x72\x64\x73"][] = $otb_duplicate_data; AxSUL: VeDXj: } U1WCa: CYdOB: return $data; } function e38checkForDuplicates($bean) { $bean_module_name = $bean->getModuleName(); if (!in_array($bean_module_name, $this->excluded_modules)) { goto A6WcV; } return false; A6WcV: $sql = new SugarQuery(); $sql->from(BeanFactory::newBean("\x45\x33\70\x5f\104\165\160\154\151\143\x61\x74\x65\x46\151\156\x64\x65\x72\x50\162\x6f\x63\x65\x73\x73")); $sql->where()->equals("\141\143\x74\151\166\x65", "\x79\145\x73"); $sql->where()->equals("\x66\157\x72\x5f\155\157\x64\165\154\x65", $bean_module_name); $sql->distinct(true); $active_processes = array(); foreach ($sql->execute() as $finder_process) { $active_processes[] = $finder_process; j6U9P: } spKlA: if ($active_processes) { goto S4hU3; } return false; S4hU3: require_once "\155\x6f\144\165\x6c\x65\x73\x2f\105\63\x38\x5f\104\x75\x70\x6c\151\143\141\x74\145\106\x69\156\144\x65\x72\120\x72\157\143\x65\x73\163\57\x44\x65\104\165\x70\151\164\127\157\x72\153\x65\162\x2e\x70\x68\x70"; $found_duplicates = array(); foreach ($active_processes as $process_data) { try { $duplicates = DeDupitWorker::findDuplicatesInDB($process_data, $bean); foreach ($duplicates as $duplicate_id => $duplicate_name) { $found_duplicates[$duplicate_id]["\x70\x72\x6f\143\x65\x73\163"][] = $process_data["\x6e\x61\x6d\x65"]; NpqCP: } TBAeI: } catch (Exception $exception) { return false; } mXUO3: } Pzlm_: return $found_duplicates; } }

@@ -1,0 +1,27 @@
+{{!--
+/*
+ * Your installation or use of this SugarCRM file is subject to the applicable
+ * terms available at
+ * http://support.sugarcrm.com/Resources/Master_Subscription_Agreements/.
+ * If you do not agree to all of the applicable terms or do not have the
+ * authority to bind the entity as an authorized representative, then do not
+ * install or use this SugarCRM file.
+ *
+ * Copyright (C) SugarCRM Inc. All rights reserved.
+ */
+--}}
+{{#each meta.panels}}
+<div class="flex-list-view-container">
+    <div class="loadUp hide" style="top: 0; text-align: center;">
+        <i class="sicon sicon-refresh sicon-is-spinning"></i>
+    </div>
+    <div class="flex-list-view-content">
+        <div class="no-data-available hidden">
+            {{str "LBL_NO_DATA_AVAILABLE"}}
+        </div>
+    </div>
+    <div class="loadBottom hide" style="bottom: 0; text-align: center;">
+        <i class="sicon sicon-refresh sicon-is-spinning"></i>
+    </div>
+</div>
+{{/each}}

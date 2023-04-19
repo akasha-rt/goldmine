@@ -1,0 +1,68 @@
+<?php
+$viewdefs['Opportunities']['base']['filter']['default'] = array (
+  'default_filter' => 'all_records',
+  'fields' => 
+  array (
+    'name' => 
+    array (
+    ),
+    'open_only' => 
+    array (
+      'dbFields' => 
+      array (
+        0 => 'sales_stage',
+      ),
+      'type' => 'bool',
+      'vname' => 'LBL_OPEN_ITEMS',
+    ),
+    'account_name' => 
+    array (
+      'dbFields' => 
+      array (
+      ),
+    ),
+    'amount' => 
+    array (
+    ),
+    'assigned_user_name' => 
+    array (
+    ),
+    'sales_stage' => 
+    array (
+    ),
+    'lead_source' => 
+    array (
+    ),
+    'strat_prod_line_c' => 
+    array (
+      'type' => 'enum',
+      'default' => true,
+      'studio' => 'visible',
+      'width' => '10%',
+      'name' => 'strat_prod_line_c',
+      'vname' => 'LBL_STRAT_PROD_LINE',
+    ),
+    'date_entered' => 
+    array (
+    ),
+    'date_closed' => 
+    array (
+    ),
+    'next_step' => 
+    array (
+    ),
+    'team_name' => 
+    array (
+    ),
+    '$owner' => 
+    array (
+      'predefined_filter' => true,
+      'vname' => 'LBL_CURRENT_USER_FILTER',
+    ),
+    '$favorite' => 
+    array (
+      'predefined_filter' => true,
+      'vname' => 'LBL_FAVORITES_FILTER',
+    ),
+  ),
+);

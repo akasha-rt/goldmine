@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  'Cold Call' => 'Cold Call',
+  'Existing Customer' => 'Existing Customer',
+  'Self Generated' => 'Self Generated',
+  'Employee' => 'Employee',
+  'Partner' => 'Partner',
+  'Public Relations' => 'Public Relations',
+  'Direct Mail' => 'Direct Mail',
+  'Conference' => 'Conference',
+  'Trade Show' => 'Trade Show',
+  'Web Site' => 'Web Site',
+  'Word of mouth' => 'Word of mouth',
+  'Email' => 'Any Email',
+  'Campaign' => 'Campaign',
+  'Other' => 'Other',
+  'Lit_Request' => 'Literature Request',
+  'OpenHouse' => 'Open House',
+  'Magazine' => 'Magazine',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'GlobalSpec' => 'GlobalSpec',
+  '' => '',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

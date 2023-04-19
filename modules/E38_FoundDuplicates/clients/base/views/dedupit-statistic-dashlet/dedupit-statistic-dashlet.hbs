@@ -1,0 +1,152 @@
+<style>
+
+    .e38-min-height {
+        min-height: 100px;
+    }
+
+    .e38-statistics-table > thead > tr > th {
+        padding: 4px 8px !important;
+        line-height: 18px !important;
+        vertical-align: middle !important;
+        min-width: 100%;
+        background: #F6F6F6;
+        text-align: center;
+    }
+
+    .e38-center-content {
+        text-align: center;
+    }
+
+</style>
+
+{{#if loading}}
+
+    <div class="row-fluid" style="text-align: center; margin-top: 45px;">
+        <div class="span12">
+            <div class="loading">
+                <i class="l1">.</i><i class="l2">.</i><i class="l3">.</i>
+            </div>
+        </div>
+    </div>
+
+{{else}}
+
+    {{#if error_message}}
+
+        <div class="row-fluid" style="text-align: center; margin-top: 45px;">
+            <div class="span12">
+                {{error_message}}
+            </div>
+        </div>
+
+    {{else}}
+
+        <table class="table table-striped dataTable e38-statistics-table">
+
+            <thead>
+
+            <tr>
+                <th rowspan="2" style="text-align: left !important;">
+                    {{str 'LBL_MODULE' 'E38_FoundDuplicates'}}
+                </th>
+                <th colspan="4" scope="colgroup" style="text-align: center;">
+                    {{str 'LBL_DUPLICATES_NUMBER' 'E38_FoundDuplicates'}}
+                </th>
+            </tr>
+
+            <tr>
+                <th scope="col">
+                    {{str 'LBL_FOUND_30_DAYS' 'E38_FoundDuplicates'}}
+                </th>
+                <th scope="col">
+                    {{str 'LBL_MERGED' 'E38_FoundDuplicates'}}
+                </th>
+                <th scope="col">
+                    {{str 'LBL_IGNORED' 'E38_FoundDuplicates'}}
+                </th>
+                <th scope="col">
+                    {{str 'LBL_RATIO' 'E38_FoundDuplicates'}}
+                    <i class="fa fa-info-circle" style="font-size: 13px;" rel="tooltip" data-placement="top"
+                       data-original-title="{{str 'LBL_RATIO_TOOLTIP' 'E38_FoundDuplicates'}}"></i>
+                </th>
+            </tr>
+
+            </thead>
+
+            <tbody>
+
+            {{#each dups_per_module}}
+
+                <tr class="single">
+
+                    <td style="white-space: nowrap !important;
+                        width: 20% !important;
+                        min-width: 20% !important;
+                        max-width: 100% !important;">
+                            <span class="list">
+                                <div class="ellipsis_inline" class="ellipsis_inline"
+                                     data-original-title="{{this.module_label}}">
+                                    {{this.module_label}}
+                                </div>
+                            </span>
+                    </td>
+
+                    <td>
+                            <span class="list">
+                                <div class="ellipsis_inline e38-center-content">
+                                    <span class="badge badge-warning">
+                                        {{this.found_last_30_days}}
+                                    </span>
+                                    /
+                                    <span class="badge badge-warning">
+                                        {{this.found}}
+                                    </span>
+                                </div>
+                            </span>
+                    </td>
+
+                    <td>
+                            <span class="list">
+                                <div class="ellipsis_inline e38-center-content">
+                                   <span class="badge badge-success">
+                                       {{this.merged}}
+                                   </span>
+                                </div>
+                            </span>
+                    </td>
+
+                    <td>
+                            <span class="list">
+                                <div class="ellipsis_inline e38-center-content">
+                                    <span class="badge">
+                                        {{this.ignored}}
+                                    </span>
+                                </div>
+                            </span>
+                    </td>
+
+                    <td>
+                            <span class="list">
+                                <div class="ellipsis_inline e38-center-content">
+                                    <span class="badge">
+                                        {{this.ratio}} {{#if this.ratio}}%{{/if}}
+                                    </span>
+                                </div>
+                            </span>
+                    </td>
+
+                </tr>
+
+            {{/each}}
+
+            </tbody>
+
+        </table>
+
+    {{/if}}
+
+{{/if}}
+
+
+
+

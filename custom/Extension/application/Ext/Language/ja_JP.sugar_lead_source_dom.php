@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  'Cold Call' => '電話勧誘',
+  'Existing Customer' => '既存の顧客',
+  'Self Generated' => '自家生成',
+  'Employee' => '従業員',
+  'Partner' => 'パートナー',
+  'Public Relations' => '広報',
+  'Direct Mail' => 'ダイレクトメール',
+  'Conference' => '会議',
+  'Trade Show' => '展示会',
+  'Web Site' => 'ウェブサイト',
+  'Word of mouth' => '口コミ',
+  'Email' => 'Eメール',
+  'Campaign' => 'キャンペーン',
+  'Other' => 'その他',
+  'Lit_Request' => 'Literature Request',
+  'OpenHouse' => 'Open House',
+  'Magazine' => 'Magazine',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'GlobalSpec' => 'GlobalSpec',
+  '' => '',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

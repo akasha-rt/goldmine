@@ -1,0 +1,6 @@
+<?php
+ // created: 2022-05-13 13:38:50
+$dictionary['Campaign']['fields']['delivered_c']['enforced']='false';
+$dictionary['Campaign']['fields']['delivered_c']['dependency']='';
+
+ ?>

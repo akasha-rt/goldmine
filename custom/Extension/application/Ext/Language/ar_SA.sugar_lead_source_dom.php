@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  '' => '',
+  'Cold Call' => 'المكالمة التسويقية',
+  'Existing Customer' => 'العميل الحالي',
+  'Self Generated' => 'منشأة ذاتيًا',
+  'Employee' => 'الموظف',
+  'Lit_Request' => 'Literature Request',
+  'Partner' => 'شريك',
+  'Public Relations' => 'العلاقات العامة',
+  'Direct Mail' => 'البريد المباشر',
+  'Conference' => 'المؤتمر',
+  'OpenHouse' => 'Open House',
+  'Trade Show' => 'معرض',
+  'Magazine' => 'Magazine',
+  'Word of mouth' => 'السماع',
+  'Web Site' => 'موقع الويب',
+  'Email' => 'البريد الإلكتروني',
+  'Campaign' => 'الحملة',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'GlobalSpec' => 'GlobalSpec',
+  'Other' => 'أخرى',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

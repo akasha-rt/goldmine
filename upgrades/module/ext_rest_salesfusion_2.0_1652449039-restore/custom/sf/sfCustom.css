@@ -1,0 +1,37 @@
+/**
+ * Put customizations to CSS definitions here.
+ *
+ * If you wish to keep your CSS in separate files, simply @import them here.  See LESS documentation on @import
+ */
+
+.epi_salesfusion-img-button {
+    background-color: #ffffff;
+	display: inline-block;
+	height: 18px;
+	margin-top: 0px;
+	padding-top: 1px;
+	padding-bottom: 0px;
+	padding-left: 1px;
+	padding-right: 1px;   
+}
+
+.epi_salesfusion-right-button ,.epi_salesfusion-right-button:hover {	
+	background:url("images/favicon.png") 4px 3px;
+	background-repeat: no-repeat;
+    color: #000000;    
+    background-color: #ffffff;
+    text-indent: 20px;
+}
+
+.epi_salesfusion-img-normal {
+    background-color: #ffffff;
+}
+
+.epi_salesfusion-img-button-alt {
+    background-color: #cccccc;
+}
+
+.epi_salesfusion-iframe {
+    width: 100%;
+    min-height: 600px;
+}

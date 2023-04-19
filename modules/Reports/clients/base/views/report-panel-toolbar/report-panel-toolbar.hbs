@@ -1,0 +1,34 @@
+{{!--
+/*
+ * Your installation or use of this SugarCRM file is subject to the applicable
+ * terms available at
+ * http://support.sugarcrm.com/Resources/Master_Subscription_Agreements/.
+ * If you do not agree to all of the applicable terms or do not have the
+ * authority to bind the entity as an authorized representative, then do not
+ * install or use this SugarCRM file.
+ *
+ * Copyright (C) SugarCRM Inc. All rights reserved.
+ */
+--}}
+<h4 data-toggle="dashlet" class="dashlet-title report-panel-title flex-grow m-0 ml-1.5">{{str meta.label module}}
+    {{#eq model.attributes.report_type "tabular"}}
+        <div class="reports-collection-count" data-container="collection-count-widget-container"></div>
+    {{/eq}}
+    {{#eq model.attributes.report_type "detailed_summary"}}
+        {{#eq ../layout.type "report-table"}}
+            <button class="btn toggleGrooups groups-collapse">{{str "LBL_COLLAPSE_ALL" "Reports"}}</button>
+        {{/eq}}
+    {{/eq}}
+</h4>
+
+
+<div class="btn-toolbar ml-4 my-0 pl-0">
+    <span class="dashlet-toolbar">
+        <a rel="tooltip" data-placement="bottom" aria-label="{{str 'LBL_DASHLET_TOGGLE'}}" data-panelaction="toggleCollapse" class="btn btn-invisible panel-toggle minify" data-original-title="{{str 'LBL_DASHLET_TOGGLE'}}">
+            <i class="sicon sicon-chevron-up"></i>
+        </a>
+        <a rel="tooltip" data-placement="bottom" aria-label="{{str 'LBL_REPORT_MINIMIZE' module}}" data-panelaction="minimize" class="btn btn-invisible panel-minimize" data-original-title="{{str 'LBL_REPORT_MINIMIZE' module}}">
+            <i class="sicon sicon-minus"></i>
+        </a>
+    </span>
+</div>

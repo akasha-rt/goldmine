@@ -1,0 +1,18 @@
+<?php
+$popupMeta = 
+array (
+  'moduleMain' => 'DocumentTemplates',
+  'varName' => 'DocumentTemplates',
+  'orderBy' => 'documenttemplates.name',
+  'whereClauses' => 
+  array (
+    'name' => 'documenttemplates.name',
+  ),
+  'searchInputs' => 
+  array (
+    0 => 'documenttemplates_number',
+    1 => 'name',
+    2 => 'priority',
+    3 => 'status',
+  ),
+);

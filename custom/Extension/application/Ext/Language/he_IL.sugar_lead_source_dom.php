@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  'Cold Call' => 'טלמרקטינג',
+  'Existing Customer' => 'לקוח קיים',
+  'Self Generated' => 'נוצר בעצמו',
+  'Employee' => 'עובד',
+  'Partner' => 'שותף',
+  'Public Relations' => 'יחסי ציבור',
+  'Direct Mail' => 'דיוור ישיר',
+  'Conference' => 'ועידה',
+  'Trade Show' => 'תערוכה',
+  'Web Site' => 'אתר אינטרנט',
+  'Word of mouth' => 'שמועה',
+  'Email' => 'Any Email',
+  'Campaign' => 'קמפיין',
+  'Other' => 'אחר',
+  'Lit_Request' => 'Literature Request',
+  'OpenHouse' => 'Open House',
+  'Magazine' => 'Magazine',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'GlobalSpec' => 'GlobalSpec',
+  '' => '',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

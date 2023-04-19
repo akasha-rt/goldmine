@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  'Cold Call' => 'Cold Call',
+  'Existing Customer' => 'Bestaande klant',
+  'Self Generated' => 'Zelf gegenereerd',
+  'Employee' => 'Medewerker',
+  'Partner' => 'Partner',
+  'Public Relations' => 'Public Relations',
+  'Direct Mail' => 'Direct mail',
+  'Conference' => 'Conferentie',
+  'Trade Show' => 'Beurs',
+  'Web Site' => 'Website',
+  'Word of mouth' => 'Mond tot mond',
+  'Email' => 'E-mailadres',
+  'Campaign' => 'Campagne',
+  'Other' => 'Anders',
+  'Lit_Request' => 'Literature Request',
+  'OpenHouse' => 'Open House',
+  'Magazine' => 'Magazine',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'GlobalSpec' => 'GlobalSpec',
+  '' => '',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

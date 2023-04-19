@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  'Cold Call' => 'Ψυχρό Τηλεφώνημα',
+  'Existing Customer' => 'Δυνητικό Πελάτη',
+  'Self Generated' => 'Αυτο-παραγώμενο',
+  'Employee' => 'Εργαζόμενος',
+  'Partner' => 'Συνεργάτης',
+  'Public Relations' => 'Δημόσιες Σχέσεις',
+  'Direct Mail' => 'Άμεση Αλληλογραφία',
+  'Conference' => 'Συνέδριο',
+  'Trade Show' => 'Εμπορική Έκθεση',
+  'Web Site' => 'Ιστοσελίδα',
+  'Word of mouth' => 'Από στόμα σε στόμα',
+  'Email' => 'Οποιοδήποτε Email',
+  'Campaign' => 'Εκστρατεία',
+  'Other' => 'Άλλο:',
+  'Lit_Request' => 'Literature Request',
+  'OpenHouse' => 'Open House',
+  'Magazine' => 'Magazine',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'GlobalSpec' => 'GlobalSpec',
+  '' => '',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

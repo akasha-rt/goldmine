@@ -1,0 +1,170 @@
+<style>
+    .rule-row {
+        margin-top: 10px;
+    }
+
+    .rule-row:hover {
+        background: #ebebeb;
+    }
+
+    .rule-value [data-type="date"], .rule-value [data-type="time"] {
+        width: 40% !important;
+    }
+
+    .rule-invalid {
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+
+    .rule-valid {
+        background-color: rgba(0, 255, 0, 0.4);
+    }
+
+    .text-center {
+        text-align: center;
+    }
+</style>
+
+{{#if licenseValid}}
+    <div class="row-fluid">
+        <div class="main-pane span12">
+            <div>
+                <div>
+                    <div>
+                        <div class="headerpane">
+
+                            <h1>
+                                <span class="record-cell" data-type="{{this.type}}" data-name="{{this.name}}">
+                                    <span class="table-cell-wrapper">
+                                        <span class="index eclipse inline" data-fieldname="{{this.name}}" data-index="">
+                                            <div class="ellipsis_inline">
+                                                {{str 'LBL_DEFINE_RULES' 'E38_DuplicateFinderProcess'}}
+                                            </div>
+                                        </span>
+                                    </span>
+                                </span>
+
+                                {{#each panels}}
+
+                                    {{#if this.header}}
+
+                                        {{#each this.fields}}
+
+                                            <span class="record-cell" data-type="{{this.type}}"
+                                                  data-name="{{this.name}}">
+                                                <span class="table-cell-wrapper">
+                                                    <span class="index" data-fieldname="{{this.name}}" data-index="">
+                                                        {{this.value}}
+                                                    </span>
+                                                </span>
+                                            </span>
+
+                                        {{/each}}
+
+                                    {{/if}}
+
+                                {{/each}}
+
+                                <div class="btn-toolbar pull-right">
+
+                                    <!--render buttons-->
+                                    {{#each buttons}}
+
+                                        <span class="detail">
+                                            <a type="{{this.type}}" track="click:{{this.action}}" name="{{this.name}}"
+                                               class="{{this.css_class}}">
+                                                {{str this.label 'E38_DuplicateFinderProcess'}}
+                                            </a>
+                                        </span>
+
+                                    {{/each}}
+                                </div>
+
+                            </h1>
+
+                        </div>
+
+                        <div class="record">
+
+                            <!-- HEAD -->
+                            <div class="row-fluid">
+
+                                <div class="offset1 span3 rule-module">
+                                    <strong>{{str 'LBL_E38_MODULE' 'E38_DuplicateFinderProcess'}}</strong>
+                                </div>
+
+                                <div class="span4 rule-field">
+                                    <strong>{{str 'LBL_E38_FIELD' 'E38_DuplicateFinderProcess'}}</strong>
+                                </div>
+
+                                <div class="span4 rule-action">
+                                    <strong>{{str 'LBL_E38_ACTION' 'E38_DuplicateFinderProcess'}}</strong>
+                                </div>
+                                <!--<div class="span3 rule-value"><strong>
+                                    {{str 'LBL_E38_VALUE' 'E38_DuplicateFinderProcess'}}</strong></div>-->
+                            </div>
+
+                            <!--DATA-->
+                            <div class="row-fluid">
+                                <div class="span12" id="rules"></div>
+                            </div>
+
+                            <div class="single">
+
+                                <div class="controls span3">
+                                    <span class="list">
+                                        <div class="ellipsis_inline" data-placement="bottom" title=""
+                                             data-original-title="">
+                                            <span sfuuid="for_module" class="edit">
+                                            </span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                <div class="controls span3">
+                                    <span class="list">
+                                        <div class="ellipsis_inline" data-placement="bottom" title=""
+                                             data-original-title="">
+                                            <span sfuuid="e38_field" class="edit">
+                                            </span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                <div class="controls span3">
+                                    <span class="list">
+                                        <div class="ellipsis_inline" data-placement="bottom" title=""
+                                             data-original-title="">
+                                            <span sfuuid="e38_action" class="edit"></span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                                <div class="controls span3">
+                                    <span class="list">
+                                        <div class="ellipsis_inline" data-placement="bottom" title=""
+                                             data-original-title="">
+                                            <span sfuuid="e38_value" class="edit">
+                                            </span>
+                                        </div>
+                                    </span>
+                                </div>
+
+                            </div>
+
+                            <div class="btn-toolbar pull-right">
+                                <div class="span12">
+                                    <span class="detail">
+                                        <a type="{{this.type}}" name="add_new_rule" class="btn btn-primary">
+                                            {{str 'LBL_ADD_NEW_RULE' 'E38_DuplicateFinderProcess'}}</a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{{/if}}
+<div class="invalid-license text-center"></div>

@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  'Cold Call' => 'Telemàrqueting',
+  'Existing Customer' => 'Client existent',
+  'Self Generated' => 'Autogenerat',
+  'Employee' => 'Empleat',
+  'Partner' => 'Soci',
+  'Public Relations' => 'Relacions públiques',
+  'Direct Mail' => 'Correu directe',
+  'Conference' => 'Conferència',
+  'Trade Show' => 'Saló',
+  'Web Site' => 'Lloc web',
+  'Word of mouth' => 'Recomanació',
+  'Email' => 'Adreça electrònica',
+  'Campaign' => 'Campanya',
+  'Other' => 'Un altre',
+  'Lit_Request' => 'Literature Request',
+  'OpenHouse' => 'Open House',
+  'Magazine' => 'Magazine',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'GlobalSpec' => 'GlobalSpec',
+  '' => '',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

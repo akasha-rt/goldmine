@@ -1,0 +1,35 @@
+{{!--
+/*
+ * Your installation or use of this SugarCRM file is subject to the applicable
+ * terms available at
+ * http://support.sugarcrm.com/Resources/Master_Subscription_Agreements/.
+ * If you do not agree to all of the applicable terms or do not have the
+ * authority to bind the entity as an authorized representative, then do not
+ * install or use this SugarCRM file.
+ *
+ * Copyright (C) SugarCRM Inc. All rights reserved.
+ */
+--}}
+
+<p class="uninstallerHintTitle">{{str 'LBL_HINT_UNINSTALL_TITLE'}}</p>
+
+{{#each services}}
+    <label class="uninstallOption">
+        <input type="radio" id={{name}} name="{{name}}" value="true">
+        <span class="uninstallOptionTitle">{{title}}</span>
+    </label>
+    <p class="uninstallOptionDescription">{{description}}</p>
+    {{#if showWarning}}
+        <p class="uninstallOptionWarningMessage">{{str 'LBL_HINT_UNINSTALL_WARNING1'}}
+            <br/>
+            {{str 'LBL_HINT_UNINSTALL_WARNING2'}}
+            <a target="_blank" href={{administrationGuideLink}}>{{str 'LBL_HINT_UNINSTALL_WARNING_LINK'}}</a>
+            <span class="detailsSpace">{{str 'LBL_HINT_UNINSTALL_WARNING3'}}</span>
+        </p>
+    {{/if}}
+    <br/>
+{{/each}}
+<span>
+<button class="uninstallHint">{{str 'LBL_HINT_UNINSTALL'}}</button>
+<button class="cancel">{{str 'LBL_HINT_CANCEL'}}</button>
+</span>

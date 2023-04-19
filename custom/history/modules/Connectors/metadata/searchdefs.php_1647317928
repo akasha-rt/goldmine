@@ -1,0 +1,31 @@
+<?php
+// created: 2021-09-10 19:01:37
+$searchdefs = array (
+  'ext_rest_twitter' => 
+  array (
+    'Accounts' => 
+    array (
+    ),
+    'Contacts' => 
+    array (
+    ),
+    'Leads' => 
+    array (
+    ),
+    'Prospects' => 
+    array (
+    ),
+  ),
+  'ext_rest_acton' => 
+  array (
+    'Contacts' => 
+    array (
+    ),
+    'Leads' => 
+    array (
+    ),
+    'Prospects' => 
+    array (
+    ),
+  ),
+);

@@ -1,0 +1,3 @@
+DBName                   	TableName                          	      Data Size	     Index Size	     Total Size	 Data Free Size
+db_starrettco            	fts_queue                          	          0.000	          0.000	          0.000	          0.008
+

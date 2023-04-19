@@ -1,0 +1,32 @@
+<?php
+ // created: 2019-08-01 16:53:26
+
+$app_list_strings['lead_source_dom']=array (
+  '' => '',
+  'Cold Call' => '電話推銷',
+  'Existing Customer' => '現有客戶',
+  'Self Generated' => '自己產生',
+  'Employee' => '員工',
+  'Lit_Request' => 'Literature Request',
+  'Partner' => '合作夥伴',
+  'Public Relations' => '公共關係',
+  'Direct Mail' => '直接郵遞',
+  'Conference' => '會商',
+  'OpenHouse' => 'Open House',
+  'Trade Show' => '商展',
+  'Magazine' => 'Magazine',
+  'Word of mouth' => '口碑',
+  'Web Site' => '網站',
+  'Email' => '電子郵件',
+  'Campaign' => '宣傳活動',
+  'DigitalNewsletter' => 'Digital Newsletter',
+  'DigitalTradeshow' => 'Digital Tradeshow',
+  'Telemarketing' => 'Telemarketing',
+  'GlobalSpec' => 'GlobalSpec',
+  'Other' => '其他',
+  'Customer Referral' => 'Customer Referral',
+  'Web Directory' => 'Web Directory',
+  'DigitalMagazine' => 'Digital Magazine',
+  'Purchased List' => 'Purchased List',
+  'Digital Campaign' => 'Digital Campaign',
+);

@@ -1,0 +1,2 @@
+({e38_found_by_dedupit:false,e38_process_info:'',e38_duplicate_label:'',render:function(){if(this.model&&typeof this.model.get('e38_found_by_dedupit')!='undefined'){this.e38_found_by_dedupit=true;this.e38_process_info=this.model.get('e38_process_info');this.e38_duplicate_label=app.lang.get('LBL_E38_DUPLICATE');}
+this._super('render');},});

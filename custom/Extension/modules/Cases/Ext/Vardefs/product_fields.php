@@ -1,0 +1,108 @@
+<?php
+ 
+$dictionary['Case']['fields']['product_group_rel'] =
+array (
+  'required' => false,
+  'source' => 'non-db',
+  'name' => 'product_group_rel',
+  'vname' => 'LBL_PRODUCT_GROUP_REL',
+  'type' => 'relate',
+  'massupdate' => 0,
+  'comments' => '',
+  'help' => '',
+  'importable' => 'true',
+  'duplicate_merge' => 'disabled',
+  'duplicate_merge_dom_value' => '0',
+  'audited' => 1,
+  'reportable' => true,
+  'len' => '255',
+  'id_name' => 'product_group_id',
+  'ext2' => 'ProductCategories',
+  'module' => 'ProductCategories',
+  'quicksearch' => 'enabled',
+  'studio' => 'visible',
+);
+$dictionary['Case']['fields']['product_group_id'] = 
+array (
+  'required' => false,
+  'name' => 'product_group_id',
+  'vname' => '',
+  'type' => 'id',
+  'massupdate' => 0,
+  'comments' => '',
+  'help' => '',
+  'importable' => 'true',
+  'duplicate_merge' => 'disabled',
+  'duplicate_merge_dom_value' => 0,
+  'audited' => 0,
+  'reportable' => 0,
+  'len' => 36,
+);
+
+
+
+ 
+$dictionary['Case']['fields']['catalog_number_rel'] =
+array (
+  'required' => false,
+  'source' => 'non-db',
+  'name' => 'catalog_number_rel',
+  'vname' => 'LBL_CATALOG_NUMBER_REL',
+  'type' => 'relate',
+  'massupdate' => 0,
+  'comments' => '',
+  'help' => '',
+  'importable' => 'true',
+  'duplicate_merge' => 'disabled',
+  'duplicate_merge_dom_value' => '0',
+  'audited' => 1,
+  'reportable' => true,
+  'len' => '255',
+  'id_name' => 'catalog_number_id',
+  'ext2' => 'ProductTemplates',
+  'module' => 'ProductTemplates',
+  'quicksearch' => 'enabled',
+  'studio' => array('editview' => false, 'detailview' => false, 'quickcreate' => false),
+  'auto_populate' => true,
+  'populate_list' => array(
+      // 'name' => 'name',
+      'category_id' => 'product_group_id',
+      'category_name' => 'product_group_rel',
+      // 'mft_part_num' => 'mft_part_num',
+      // 'list_price' => 'list_price',
+      // 'cost_price' => 'cost_price',
+      // 'discount_price' => 'discount_price',
+      // 'list_usdollar' => 'list_usdollar',
+      // 'cost_usdollar' => 'cost_usdollar',
+      // 'discount_usdollar' => 'discount_usdollar',
+      // 'currency_id' => 'currency_id',
+      // 'base_rate' => 'base_rate',
+      // 'tax_class' => 'tax_class',
+      // 'weight' => 'weight',
+      // 'manufacturer_id' => 'manufacturer_id',
+      // 'manufacturer_name' => 'manufacturer_name',
+      // 'type_id' => 'type_id',
+      // 'type_name' => 'type_name',
+      // 'service_duration_value' => ['service_duration_value', 'catalog_service_duration_value'],
+      // 'service_duration_unit' => ['service_duration_unit', 'catalog_service_duration_unit'],
+      // 'renewable' => 'renewable',
+      // 'service' => 'service',
+      // 'lock_duration' => 'lock_duration',
+  )
+);
+$dictionary['Case']['fields']['catalog_number_id'] = 
+array (
+  'required' => false,
+  'name' => 'catalog_number_id',
+  'vname' => '',
+  'type' => 'id',
+  'massupdate' => 0,
+  'comments' => '',
+  'help' => '',
+  'importable' => 'true',
+  'duplicate_merge' => 'disabled',
+  'duplicate_merge_dom_value' => 0,
+  'audited' => 0,
+  'reportable' => 0,
+  'len' => 36,
+);

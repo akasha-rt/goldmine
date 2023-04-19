@@ -1,0 +1,57 @@
+<div class="row-fluid">
+    <div class="main-pane span12">
+        <div class="headerpane">
+            <h1>
+                <span class="record-cell" data-type="{{this.type}}" data-name="{{this.name}}">
+                    <span class="table-cell-wrapper">
+                        <span class="index eclipse inline" data-fieldname="{{this.name}}">
+                            <div class="ellipsis_inline">{{str 'LBL_ENABLE_AUTOMERGE_PROCESS' 'E38_DuplicateFinderProcess'}}</div>
+                        </span>
+                    </span>
+                </span>
+
+                <div class="btn-toolbar pull-right">
+
+                    <!--render buttons-->
+                    {{#each buttons}}
+                        <span class="detail">
+                            <a type="{{this.type}}" track="click:{{this.action}}" name="{{this.name}}"
+                               class="{{this.css_class}}">
+                                {{str this.label 'E38_DuplicateFinderProcess'}}
+                            </a>
+                        </span>
+                    {{/each}}
+                </div>
+            </h1>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <p class="lead">How to identify primary record during auto merge</p>
+                    <hr/>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div class="span12">
+                    When auto merging 2 duplicate records, use
+                    <select id="e38_available_datetime_fields" style="width: 120px; height: inherit; margin-top: 6px;">
+                        {{#each datetime_fields}}
+                            <option value="{{this.id}}" {{#if this.selected}}selected="selected"{{/if}}>
+                                {{this.label}}
+                            </option>
+                        {{/each}}
+                    </select>
+                    field to decide if
+                    <select id="e38_available_rules_options" style="width: 120px; height: inherit; margin-top: 6px;">
+                        {{#each rules_options}}
+                            <option value="{{this.value}}" {{#if this.selected}}selected="selected"{{/if}}>
+                                {{this.label}}
+                            </option>
+                        {{/each}}
+                    </select>
+                    record is primary record.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

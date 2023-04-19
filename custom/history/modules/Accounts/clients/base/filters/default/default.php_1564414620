@@ -1,0 +1,42 @@
+<?php
+// created: 2019-01-28 17:51:59
+$viewdefs['Accounts']['base']['filter']['default'] = array (
+  'default_filter' => 'all_records',
+  'fields' => 
+  array (
+    'name' => 
+    array (
+    ),
+    'account_status_c' => 
+    array (
+    ),
+    'account_type' => 
+    array (
+    ),
+    'parent_account_c' => 
+    array (
+    ),
+    'billing_address_state' => 
+    array (
+    ),
+    'billing_address_country' => 
+    array (
+    ),
+    'industry' => 
+    array (
+    ),
+    'assigned_user_name' => 
+    array (
+    ),
+    '$owner' => 
+    array (
+      'predefined_filter' => true,
+      'vname' => 'LBL_CURRENT_USER_FILTER',
+    ),
+    '$favorite' => 
+    array (
+      'predefined_filter' => true,
+      'vname' => 'LBL_FAVORITES_FILTER',
+    ),
+  ),
+);

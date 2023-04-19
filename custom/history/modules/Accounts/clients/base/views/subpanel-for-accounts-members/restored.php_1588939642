@@ -1,0 +1,53 @@
+<?php
+// created: 2020-05-08 12:07:19
+$viewdefs['Accounts']['base']['view']['subpanel-for-accounts-members'] = array (
+  'panels' => 
+  array (
+    0 => 
+    array (
+      'name' => 'panel_header',
+      'label' => 'LBL_PANEL_1',
+      'fields' => 
+      array (
+        0 => 
+        array (
+          'default' => true,
+          'label' => 'LBL_LIST_ACCOUNT_NAME',
+          'enabled' => true,
+          'name' => 'name',
+          'link' => true,
+        ),
+        1 => 
+        array (
+          'default' => true,
+          'label' => 'LBL_LIST_CITY',
+          'enabled' => true,
+          'name' => 'billing_address_city',
+        ),
+        2 => 
+        array (
+          'name' => 'billing_address_state',
+          'label' => 'LBL_BILLING_ADDRESS_STATE',
+          'enabled' => true,
+          'default' => true,
+        ),
+        3 => 
+        array (
+          'type' => 'varchar',
+          'default' => true,
+          'label' => 'LBL_BILLING_ADDRESS_COUNTRY',
+          'enabled' => true,
+          'name' => 'billing_address_country',
+        ),
+        4 => 
+        array (
+          'default' => true,
+          'label' => 'LBL_LIST_PHONE',
+          'enabled' => true,
+          'name' => 'phone_office',
+        ),
+      ),
+    ),
+  ),
+  'type' => 'subpanel-list',
+);

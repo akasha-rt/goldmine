@@ -1,0 +1,26 @@
+<?php
+// created: 2019-10-23 15:17:47
+$viewdefs['SF1_SalesmanFinder']['base']['filter']['default'] = array (
+  'default_filter' => 'all_records',
+  'fields' => 
+  array (
+    'name' => 
+    array (
+    ),
+    'industrial_area' => 
+    array (
+    ),
+    'industrial_territory' => 
+    array (
+    ),
+    'territory_c' => 
+    array (
+    ),
+    'country' => 
+    array (
+    ),
+    'regional_manager' => 
+    array (
+    ),
+  ),
+);

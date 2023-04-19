@@ -1,0 +1,95 @@
+{{!--
+/*
+ * Your installation or use of this SugarCRM file is subject to the applicable
+ * terms available at
+ * http://support.sugarcrm.com/06_Customer_Center/10_Master_Subscription_Agreements/.
+ * If you do not agree to all of the applicable terms or do not have the
+ * authority to bind the entity as an authorized representative, then do not
+ * install or use this SugarCRM file.
+ *
+ * Copyright (C) SugarCRM Inc. All rights reserved.
+ */
+--}}
+
+<style>
+#leadsandcontacts_loading {
+    height: 25px;
+    color: blue;
+    background-color: light-grey;
+}
+
+#leadsandcontactslistview_table a {
+    word-break: break-all;
+}
+</style>
+
+<select id="leadsandcontacts_modulefilter">
+    <option value="" {{#eq module ''}}selected{{/eq}}>All</option>
+    <option value="Leads" {{#eq module 'Leads'}}selected{{/eq}}>Leads</option>
+    <option value="Contacts" {{#eq module 'Contacts'}}selected{{/eq}}>Contacts</option>
+</select>
+
+<select id="leadsandcontacts_typefilter">
+    <option value="" {{#eq typefilter ''}}selected{{/eq}}>All</option>
+    <option value="Emails" {{#eq typefilter 'Emails'}}selected{{/eq}}>Emails</option>
+    <option value="Events" {{#eq typefilter 'Events'}}selected{{/eq}}>Events</option>
+    <option value="WebActivity" {{#eq typefilter 'WebActivity'}}selected{{/eq}}>Web Activity</option>
+    <option value="LandingPages" {{#eq typefilter 'LandingPages'}}selected{{/eq}}>Landing Pages</option>
+</select>
+
+{{#if record_data.count}}
+    <div class="list-view" id="leadsandcontactslistview_div">
+        <table class="table table-striped dataTable" id="leadsandcontactslistview_table">
+            <thead>
+                <tr>
+                    <th class="sorting sorting_{{#eq order_by 'last_name'}}{{order_dir}}{{/eq}}" data-orderby="last_name"  data-orderdir="{{#eq order_by 'last_name'}}{{order_dir}}{{/eq}}">
+                        <span data-orderby="last_name">Name</span>
+                    </th>
+                    <th class="sorting sorting_{{#eq order_by 'type'}}{{order_dir}}{{/eq}}" data-orderby="type" data-orderdir="{{#eq order_by 'type'}}{{order_dir}}{{/eq}}">
+                        <span data-orderby="type">Type</span>
+                    </th>
+                    <th class="sorting sorting_{{#eq order_by 'status'}}{{order_dir}}{{/eq}}" data-orderby="status" data-orderdir="{{#eq order_by 'status'}}{{order_dir}}{{/eq}}">
+                        <span data-orderby="status">Status</span>
+                    </th>
+                    <th class="sorting sorting_{{#eq order_by 'date'}}{{order_dir}}{{/eq}}" data-orderby="date" data-orderdir="{{#eq order_by 'date'}}{{order_dir}}{{/eq}}">
+                        <span data-orderby="date">Date</span>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each record_data.records}}
+                <tr>
+                    <td>
+                        <div class="ellipsis_inline" title="" data-placement="bottom" data-original-title="{{this.first_name}} {{this.last_name}}">
+                        {{#eq this.module_name 'Leads'}}
+                            <span class="table-cell-wrapper" style="width: 42px;" title="Lead">
+                                <span class="label label-module label-module-sm label-Leads" rel="tooltip" title="" data-placement="right" data-original-title="Lead" tabindex="-1">Le</span>
+                            </span>
+                        {{/eq}}
+                        {{#eq this.module_name 'Contacts'}}
+                            <span class="table-cell-wrapper" style="width: 42px;" title="Contact">
+                                <span class="label label-module label-module-sm label-Contacts" rel="tooltip" title="" data-placement="right" data-original-title="Contact" tabindex="-1">Co</span>
+                            </span>
+                        {{/eq}}
+                        <a href="#{{this.module_name}}/{{this.id}}" class="highlight_{{this.module_name}}">{{this.first_name}} {{this.last_name}}</a>
+                        </div>
+                    </td>
+                    <td><div class="ellipsis_inline" title="" data-placement="bottom" data-original-title="{{this.type}}">{{this.type}}</div></td>
+                    {{#if link}}
+                    <td><div class="ellipsis_inline" title="" data-placement="bottom" data-original-title="{{link}}"><a href="{{link}}">{{this.status}}</a></div></td>
+                    {{else}}
+                    <td><div class="ellipsis_inline" title="" data-placement="bottom" data-original-title="{{this.status}}">{{this.status}}</div></td>
+                    {{/if}}
+                    <td><div class="ellipsis_inline" title="" data-placement="bottom" data-original-title="{{this.user_date}}">{{this.user_date}}</div></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <button id="leadsandcontacts_showmore" style="display:none" data-action="show-more" class="btn btn-link btn-invisible more padded">Show more...</button>
+    <div id="leadsandcontacts_loading" style="display:none">Loading ...</div>
+{{else}}
+    <div class="block-footer">{{str "LBL_NO_DATA_AVAILABLE"}}</div>
+{{/if}}
+
+

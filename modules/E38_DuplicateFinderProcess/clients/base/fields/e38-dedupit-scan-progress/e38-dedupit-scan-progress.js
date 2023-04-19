@@ -1,0 +1,2 @@
+({extendsFrom:'BaseMassupdateProgressView',loading:true,initialize:function(options){this._super('initialize',[options]);app.api.call('get',app.api.buildURL('DuplicateFinderProcess/scan-percentage/'+this.model.get('id')),null,{success:function(response){this.loading=false;if(response.success){this.progress=response.progress;}else{this.error=true;this.message=response.message;}
+this.render();}.bind(this),error:function(error){this.loading=false;this.render();}.bind(this),});},});

@@ -1,0 +1,40 @@
+<div class="row-fluid">
+
+    <div class="span12">
+
+        <div style="margin: 12px 0 5px 10px" class="form-actions inline">
+
+            <label for="e38_process_selection" style="padding-right: 5px; display: inline-block;">
+                {{str 'LBL_SELECT_PROCESS_FILTER' 'E38_FoundDuplicates'}}
+            </label>
+
+            <select id="e38_process_selection" name="e38_process_selection">
+
+                <option value=""></option>
+
+                {{#each active_processes}}
+
+                    <option value="{{@key}}">{{this}}</option>
+
+                {{/each}}
+
+            </select>
+
+            <label for="e38_duplicate_name" style="padding: 0 5px 0 10px; display: inline-block;">
+                {{str 'LBL_DUP_RECORD_NAME_FILTER' 'E38_FoundDuplicates'}}
+            </label>
+
+            <input type="text" id="e38_duplicate_name" name="e38_duplicate_name" style="margin-bottom: 9px !important;">
+
+            <label for="e38_show_ignored" style="padding: 0 5px 0 10px; display: inline-block;">
+                {{str 'LBL_SHOW_IGNORED_FILTER' 'E38_FoundDuplicates'}}
+            </label>
+
+            <input type="checkbox" id="e38_show_ignored" name="e38_show_ignored" style="margin-bottom: 6px;">
+
+        </div>
+
+    </div>
+
+</div>
+

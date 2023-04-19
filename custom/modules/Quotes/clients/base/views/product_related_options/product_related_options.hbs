@@ -1,0 +1,48 @@
+<div class="dashboard quotes-create">
+    <div class="cols row-fluid">
+        <ul class="dashlets row-fluid">
+            <li class="span-12">
+                <ul class="dashlet-row">
+                    <li class="row-fluid">
+                        <div class="rows well well-invisible">
+                            <ul class="dashlet-cell rows row-fluid">
+                                <li class="dashlet-container span12">
+                                    <div class="thumbnail dashlet" data-type="dashlet">
+                                        <div data-dashlet="toolbar">
+                                            <div class="dashlet-header">
+                                                <h4 data-toggle="dashlet" class="dashlet-title">
+                                                    Product Options
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div data-dashlet="dashlet" class="dashlet-content">
+                                         {{#each myData}}
+                                            <label>Product Accessories: <strong>{{name}}</strong></label>
+                                            <br>
+                                            {{#each options}}
+                                            <div class="form-inline" style="display: inline-flex;padding-bottom:10px;">
+                                                <div class="form-group" style="margin-right: 5px;">
+                                                    <input type="text" class="form-control-plaintext v-option-name" placeholder="Name" value="{{name}}"  style="width: 100px;background-color: white;border-color: black;border-radius: 3px !important;border-bottom-width: thin;" disabled>
+                                                </div>
+                                                <div class="form-group" style="margin-right: 5px;">
+                                                    <input type="text" class="form-control-plaintext v-option-price" placeholder="Price" value="{{price}}"  style="width: 50px;background-color: white;border-color: black;border-radius: 3px !important;border-bottom-width: thin;" disabled> 
+                                                </div>
+                                                <div class="form-group" style="margin-right: 5px;">
+                                                    <input type="text" class="form-control-plaintext v-option-description" placeholder="Description" value="{{description}}"  style="width: 300px;background-color: white;border-color: black;border-radius: 3px !important;border-bottom-width: thin;" disabled> 
+                                                </div>
+                                                <input type="checkbox" class="add-to-line-item" value="" style="width:50px;height:20px;"/>
+                                            </div> 
+                                            {{/each}}
+                                            <br>
+                                            <br>
+                                        {{/each}}
+                                        </div> 
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+        </ul> 
+    </div>
