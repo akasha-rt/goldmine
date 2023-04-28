@@ -1,1 +1,0 @@
-(function(app){app.events.on('app:init',function(){app.plugins.register('File',['field'],{bindKeyDown:function(){},bindDocumentMouseDown:function(){}});});})(SUGAR.App);

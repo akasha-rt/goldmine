@@ -1,1 +1,0 @@
-(function(app){app.events.on('router:init',function(){var routes=[{name:'notification-preferences',route:'notification-preferences',callback:function(){app.controller.loadView({module:'Home',layout:'stage2-news-preferences-drawer'});}}];app.router.addRoutes(routes);});})(SUGAR.App);
