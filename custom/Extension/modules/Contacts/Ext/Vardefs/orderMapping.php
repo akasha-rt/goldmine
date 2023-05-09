@@ -1,5 +1,5 @@
 <?php
-// created: 2023-03-24 07:07:21
+// created: 2023-05-05 14:39:31
 $extensionOrderMap = array (
   'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_bytewise_source_c.php' => 
   array (
@@ -767,6 +767,84 @@ $extensionOrderMap = array (
   array (
     'md5' => '3a7bc117161620d0b61d46eaff16afcc',
     'mtime' => 1679641622,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_ext1_c.php' => 
+  array (
+    'md5' => 'a71301faa56573b0d9c83613ee35dfd5',
+    'mtime' => 1683279164,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_ext2_c.php' => 
+  array (
+    'md5' => 'cd5335a255ad33e5576324637bbd14e2',
+    'mtime' => 1683279181,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_ext3_c.php' => 
+  array (
+    'md5' => '4bea8a6d075ea8d650db55717928a5a2',
+    'mtime' => 1683279192,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_ext4_c.php' => 
+  array (
+    'md5' => '9e8c399a4e45794ed88eeb479e2c93bc',
+    'mtime' => 1683279202,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_fax_c.php' => 
+  array (
+    'md5' => 'a655eaf299d9e34dadb57664de920135',
+    'mtime' => 1683279252,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_key1_c.php' => 
+  array (
+    'md5' => '677922348376ecbda5a593556d333576',
+    'mtime' => 1683279271,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_key2_c.php' => 
+  array (
+    'md5' => 'bced52e09ac3c40d79fec09be73510e4',
+    'mtime' => 1683279278,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_key3_c.php' => 
+  array (
+    'md5' => '731c40cd758ef95d261df1f37ca01d00',
+    'mtime' => 1683279288,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_key4_c.php' => 
+  array (
+    'md5' => '2f376a777adf97b49971c1783f1a9a48',
+    'mtime' => 1683279296,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_key5_c.php' => 
+  array (
+    'md5' => 'a4cd026dcc62ee5dee2ad63e449d6a07',
+    'mtime' => 1683279304,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_c1mergecodes_c.php' => 
+  array (
+    'md5' => '1fca50bef9cad20772e0cad3e4b5b989',
+    'mtime' => 1683279398,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_c1recid_c.php' => 
+  array (
+    'md5' => '024b394e91ee5ea8d48496cc44b3a8ef',
+    'mtime' => 1683279412,
+    'is_override' => false,
+  ),
+  'custom/Extension/modules/Contacts/Ext/Vardefs/sugarfield_gm_cserecid_c.php' => 
+  array (
+    'md5' => 'bf538b237b11ff4e2dea2c6f56ddb34a',
+    'mtime' => 1683279570,
     'is_override' => false,
   ),
 );
