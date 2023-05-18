@@ -11,6 +11,6 @@ $dictionary['Lead']['fields']['gm_cswrecid_c']['dependency']='';
 $dictionary['Lead']['fields']['gm_cswrecid_c']['required_formula']='';
 $dictionary['Lead']['fields']['gm_cswrecid_c']['readonly_formula']='';
 $dictionary['Lead']['fields']['gm_cswrecid_c']['readonly']=true;
-$dictionary['Lead']['fields']['gm_cserecid_c']['dbType']='longtext';
+$dictionary['Lead']['fields']['gm_cswrecid_c']['dbType']='longtext';
 
  ?>

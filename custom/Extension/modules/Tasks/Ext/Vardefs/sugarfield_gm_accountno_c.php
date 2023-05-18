@@ -10,5 +10,6 @@ $dictionary['Task']['fields']['gm_accountno_c']['enforced']='';
 $dictionary['Task']['fields']['gm_accountno_c']['dependency']='';
 $dictionary['Task']['fields']['gm_accountno_c']['required_formula']='';
 $dictionary['Task']['fields']['gm_accountno_c']['readonly_formula']='';
+$dictionary['Task']['fields']['gm_accountno_c']['dbType']='longtext';
 
  ?>
