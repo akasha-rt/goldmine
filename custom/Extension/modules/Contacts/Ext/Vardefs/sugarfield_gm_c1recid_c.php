@@ -10,5 +10,6 @@ $dictionary['Contact']['fields']['gm_c1recid_c']['enforced']='';
 $dictionary['Contact']['fields']['gm_c1recid_c']['dependency']='';
 $dictionary['Contact']['fields']['gm_c1recid_c']['required_formula']='';
 $dictionary['Contact']['fields']['gm_c1recid_c']['readonly_formula']='';
+$dictionary['Contact']['fields']['gm_c1recid_c']['dbType']='longtext';
 
  ?>

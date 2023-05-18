@@ -10,5 +10,6 @@ $dictionary['Lead']['fields']['gm_c1recid_c']['enforced']='';
 $dictionary['Lead']['fields']['gm_c1recid_c']['dependency']='';
 $dictionary['Lead']['fields']['gm_c1recid_c']['required_formula']='';
 $dictionary['Lead']['fields']['gm_c1recid_c']['readonly_formula']='';
+$dictionary['Lead']['fields']['gm_c1recid_c']['dbType']='longtext';
 
  ?>

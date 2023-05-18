@@ -11,5 +11,6 @@ $dictionary['Account']['fields']['gm_cswrecid_c']['dependency']='';
 $dictionary['Account']['fields']['gm_cswrecid_c']['required_formula']='';
 $dictionary['Account']['fields']['gm_cswrecid_c']['readonly_formula']='';
 $dictionary['Account']['fields']['gm_cswrecid_c']['readonly']=true;
+$dictionary['Account']['fields']['gm_cswrecid_c']['dbType']='longtext';
 
  ?>
